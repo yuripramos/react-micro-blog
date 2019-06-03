@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import { Container } from "../../styles/grid";
 import TransactionList from "./TransactionList";
@@ -15,19 +15,37 @@ class Content extends Component {
     this.innerRef = React.createRef();
   }
 
+  componentDidMount() {
+    const { getArticles, getAuthors } = this.props;
+    getAuthors();
+    getArticles();
+  }
+
   render() {
-    const { transfers } = this.props;
+    const { articlesList, authorsList } = this.props;
+    const isFilled = articlesList && articlesList.length > 0;
     return (
       <Container>
         <ContentWrapper>
-          <Column width={isResponsive() ? 0 : 35}>
-            <Hide below="lg">
-              <TransactionList transfers={transfers} />
-            </Hide>
-          </Column>
-          <Column width={isResponsive() ? 100 : 65}>
-            <TransactionDetail innerRef={this.innerRef} />
-          </Column>
+          {isFilled && (
+            <Fragment>
+              <Column width={isResponsive() ? 0 : 35}>
+                <Hide below="lg">
+                  <TransactionList
+                    authorsList={authorsList}
+                    articlesList={articlesList}
+                  />
+                </Hide>
+              </Column>
+              <Column width={isResponsive() ? 100 : 65}>
+                <TransactionDetail
+                  authorsList={authorsList}
+                  articlesList={articlesList}
+                  innerRef={this.innerRef}
+                />
+              </Column>
+            </Fragment>
+          )}
         </ContentWrapper>
       </Container>
     );
@@ -38,7 +56,11 @@ Content.defaultProps = {};
 
 Content.propTypes = {
   transfers: arrayOf(object),
-  totalBalance: func
+  totalBalance: func,
+  getArticles: func,
+  getAuthors: func,
+  articlesList: arrayOf(object),
+  authorsList: arrayOf(object)
 };
 
 export default Content;

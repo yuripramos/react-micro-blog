@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { shape, func, array } from "prop-types";
 import { Container, Row, Column } from "../../styles/grid";
-import SidebarMenu from "../common/SidebarMenu";
+// import SidebarMenu from "../common/SidebarMenu";
 import Logo from "../../assets/currency.png";
 import { HeaderWrapper, TitleWrapper } from "./styles";
 import { slide as Menu } from "react-burger-menu";
@@ -66,7 +66,7 @@ class Header extends Component {
   }
 
   render() {
-    const { authorsList, history } = this.props;
+    // const { authorsList, history } = this.props;
     const { menuOpen } = this.state;
     return (
       <HeaderWrapper>
@@ -74,7 +74,7 @@ class Header extends Component {
           <Hide below="lg">
             <Row>
               <Column>
-                <SidebarMenu currentLocation={history.location.pathname} />
+                {/* <SidebarMenu currentLocation={history.location.pathname} /> */}
               </Column>
               <Column>
                 <TitleWrapper>

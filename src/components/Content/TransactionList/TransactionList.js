@@ -1,5 +1,5 @@
 import React from "react";
-import { arrayOf, object } from "prop-types";
+import { array } from "prop-types";
 import Icon from "../../common/Icon";
 import {
   Title,
@@ -13,13 +13,14 @@ import {
   Empty
 } from "./styles";
 
-function TransactionList({ transfers }) {
-  const isFilled = transfers.length > 0;
+function TransactionList({ articlesList, authorsList }) {
+  console.log("transaction list", authorsList, articlesList);
+  const isFilled = articlesList.length > 0;
   return (
     <ListWrapper>
       <Title>Articles</Title>
       {isFilled ? (
-        transfers.map((e, i) => (
+        articlesList.map((e, i) => (
           <Item key={i}>
             <AccInfo>
               <Description recipient>
@@ -27,7 +28,7 @@ function TransactionList({ transfers }) {
               </Description>
               <InfoStyle>Origin Acc: INFO 1</InfoStyle>
               <InfoStyle>Document: INFO 2</InfoStyle>
-              <Name>{e.recipient.name}</Name>
+              <Name>name name</Name>
             </AccInfo>
             <Arrow>
               {" "}
@@ -56,5 +57,6 @@ function TransactionList({ transfers }) {
 export default TransactionList;
 
 TransactionList.propTypes = {
-  transfers: arrayOf(object)
+  authorsList: array,
+  articlesList: array
 };
