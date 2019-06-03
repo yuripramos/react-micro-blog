@@ -4,7 +4,6 @@ import Dropdown from "../../common/Dropdown";
 import { func, object } from "prop-types";
 import { Row } from "../../../styles/grid";
 import { isResponsive } from "../../../utils/getResolution";
-import formatNumber from "../../../utils/formatNumber";
 
 import {
   Fieldset,
@@ -78,11 +77,6 @@ class TransactionDetail extends Component {
               <TitleWrapper>
                 <FieldsetTitle>AVAILABLE BALANCE</FieldsetTitle>
               </TitleWrapper>
-              <FloatingText>
-                <Currency inDebt={originAccount.availableBalance < 0}>
-                  R$&nbsp;&nbsp;{formatNumber(originAccount.availableBalance)}
-                </Currency>
-              </FloatingText>
             </AvailableBalBox>
           </Fieldset>
           <Fieldset width={50} adjust={-4}>

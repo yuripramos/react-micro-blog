@@ -15,10 +15,6 @@ class Content extends Component {
     this.innerRef = React.createRef();
   }
 
-  componentDidMount() {
-    this.props.totalBalance();
-  }
-
   render() {
     const { transfers } = this.props;
     return (

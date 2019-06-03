@@ -6,11 +6,9 @@ import { Router } from "react-router-dom";
 import Routes from "./components/Routes";
 import { rem } from "./styles/tools";
 import store from "./utils/store";
-
 import "./App.css";
 
 class App extends Component {
-
   render() {
     return (
       <Provider store={store}>
@@ -21,10 +19,10 @@ class App extends Component {
               breakpoints: [rem(767), rem(992), rem(1179)]
             }}
           >
-          <div className="App">
-            <Routes />
-          </div>
-        </ThemeProvider>
+            <div className="App">
+              <Routes />
+            </div>
+          </ThemeProvider>
         </Router>
       </Provider>
     );

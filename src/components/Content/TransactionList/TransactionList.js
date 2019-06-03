@@ -12,13 +12,12 @@ import {
   Name,
   Empty
 } from "./styles";
-import formatNumber from "../../../utils/formatNumber";
 
 function TransactionList({ transfers }) {
   const isFilled = transfers.length > 0;
   return (
     <ListWrapper>
-      <Title>Transactions History</Title>
+      <Title>Articles</Title>
       {isFilled ? (
         transfers.map((e, i) => (
           <Item key={i}>
@@ -26,8 +25,8 @@ function TransactionList({ transfers }) {
               <Description recipient>
                 <Icon name="Transactions" />
               </Description>
-              <InfoStyle>Origin Acc: {e.originAccount} / {e.typeOfTransaction}</InfoStyle>
-              <InfoStyle>Document: {e.recipient.taxId}</InfoStyle>
+              <InfoStyle>Origin Acc: INFO 1</InfoStyle>
+              <InfoStyle>Document: INFO 2</InfoStyle>
               <Name>{e.recipient.name}</Name>
             </AccInfo>
             <Arrow>
@@ -36,20 +35,19 @@ function TransactionList({ transfers }) {
             </Arrow>
             <AccInfo spacing="true">
               <Description>
-                {e.dueDate} / R$ {e.ammount && formatNumber(e.ammount)}
+                {/* {e.dueDate} / R$ {e.ammount && formatNumber(e.ammount)} */}
               </Description>
-              <InfoStyle>
-                {`Bank: ${e.recipient.bankName} - ${e.recipient.bankBranch} / ${
-                  e.recipient.bankAccount
-                }`}
-              </InfoStyle>
-              <InfoStyle>{e.documentType.toUpperCase()}{`: ${e.document}`}</InfoStyle>
+              <InfoStyle>{`data:01/10/2018 - hour:xx:xx:xx`}</InfoStyle>
+              {/* <InfoStyle>
+                {e.documentType.toUpperCase()}
+                {`: ${e.document}`}
+              </InfoStyle> */}
               <Name>{e.favoredName}</Name>
             </AccInfo>
           </Item>
         ))
       ) : (
-        <Empty>No Transfers to display</Empty>
+        <Empty>No Articles to display</Empty>
       )}
     </ListWrapper>
   );
@@ -58,5 +56,5 @@ function TransactionList({ transfers }) {
 export default TransactionList;
 
 TransactionList.propTypes = {
-  transfers: arrayOf(object),
+  transfers: arrayOf(object)
 };

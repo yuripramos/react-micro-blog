@@ -7,7 +7,7 @@ import { HeaderWrapper, TitleWrapper } from "./styles";
 import { slide as Menu } from "react-burger-menu";
 import Hide from "../common/Hide";
 import Icon from "../common/Icon";
-import TransactionList from "../Content/TransactionList";
+// import TransactionList from "../Content/TransactionList";
 import { rem } from "../../styles/tools";
 import { white, black } from "../../styles/settings";
 
@@ -56,13 +56,17 @@ class Header extends Component {
   onToggleMenu({ isOpen }) {
     this.setState({ menuOpen: isOpen });
   }
-
+  componentDidMount() {
+    const { getArticles, getAuthors } = this.props;
+    getAuthors();
+    getArticles();
+  }
   closeMenu() {
     this.setState({ menuOpen: false });
   }
 
   render() {
-    const { transfers, history } = this.props;
+    const { authorsList, history } = this.props;
     const { menuOpen } = this.state;
     return (
       <HeaderWrapper>
@@ -99,7 +103,7 @@ class Header extends Component {
                 width="90%"
                 styles={menuOpen === true ? bmStylesOpened : bmStylesClosed}
               >
-                <TransactionList transfers={transfers} />
+                {/* <TransactionList transfers={transfers} /> */}
               </Menu>
             )}
             <TitleWrapper>
@@ -118,5 +122,8 @@ Header.propTypes = {
   history: shape({
     push: func
   }),
-  transfers: array
+  authorsList: array,
+  articlesList: array,
+  getAuthors: func,
+  getArticles: func
 };
