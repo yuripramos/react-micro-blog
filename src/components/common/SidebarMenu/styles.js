@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { rem, media } from "../../../styles/tools";
-import { white, trueWhite } from "../../../styles/settings";
+import { white, trueWhite, darkestBlue, green } from "../../../styles/settings";
 import Icon from "../Icon";
 
 export const MenuList = styled.ul`
@@ -17,30 +17,34 @@ export const Divisor = styled.div`
 export const ListItem = styled.li`
   cursor: pointer;
   position: relative;
-  height: ${rem(65)};
-  font-family: Lato;
-  font-size: ${rem(20)};
-  color: ${trueWhite};
-  letter-spacing: ${rem(1)};
-  padding-top: ${rem(20)};
-  margin: 0 ${rem(25)} 0 ${rem(70)};
+  height: ${rem(50)};
+  font-family: Roboto;
+  font-size: ${rem(15)};
+  color: ${darkestBlue};
+  list-style: none;
+  letter-spacing: ${rem(2)};
+  padding-top: ${rem(5)};
+  margin: 0 ${rem(5)} ${rem(5)} 0;
+  text-align: left;
 
   ${({ active }) =>
     active &&
     css`
-      color: ${white};
+      color: ${green};
     `};
 
   :hover {
     opacity: 0.7;
   }
-
 `;
 
-export const IconWrapper = styled.div`
+export const LeftBorder = styled.div`
+  width: ${rem(7)};
+  height: 100%;
+  background-color: ${darkestBlue};
   position: absolute;
-  left: -${rem(45)};
-  top: ${rem(16)};
+  top: 0;
+  left: -${rem(40)};
 `;
 
 export const Item = styled.div`

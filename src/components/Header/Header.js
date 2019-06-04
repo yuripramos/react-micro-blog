@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { shape, func, array } from "prop-types";
 import { Container, Row, Column } from "../../styles/grid";
-// import SidebarMenu from "../common/SidebarMenu";
-import Logo from "../../assets/currency.png";
+import SidebarMenu from "../common/SidebarMenu";
+import Logo from "../../assets/images/logo.png";
 import { HeaderWrapper, TitleWrapper } from "./styles";
 import { slide as Menu } from "react-burger-menu";
 import Hide from "../common/Hide";
@@ -56,31 +56,30 @@ class Header extends Component {
   onToggleMenu({ isOpen }) {
     this.setState({ menuOpen: isOpen });
   }
-  componentDidMount() {
-    const { getArticles, getAuthors } = this.props;
-    getAuthors();
-    getArticles();
-  }
   closeMenu() {
     this.setState({ menuOpen: false });
   }
 
   render() {
-    // const { authorsList, history } = this.props;
+    const { history } = this.props;
     const { menuOpen } = this.state;
+
     return (
       <HeaderWrapper>
         <Container onClick={this.closeMenu}>
           <Hide below="lg">
             <Row>
               <Column>
-                {/* <SidebarMenu currentLocation={history.location.pathname} /> */}
+                <SidebarMenu
+                  currentLocation={history.location.pathname}
+                  desktop
+                />
               </Column>
               <Column>
                 <TitleWrapper>
                   <img
                     src={Logo}
-                    alt="logo financial"
+                    alt="business logo"
                     width="44px"
                     height="44px"
                   />
@@ -89,25 +88,27 @@ class Header extends Component {
             </Row>
           </Hide>
           <Hide above="lg">
-            {true && (
-              <Menu
-                isOpen={menuOpen}
-                onStateChange={this.onToggleMenu}
-                customBurgerIcon={
-                  menuOpen === true ? (
-                    <Icon name="MenuClose" color={white} />
-                  ) : (
-                    <Icon name="Menu" color={black} />
-                  )
-                }
-                width="90%"
-                styles={menuOpen === true ? bmStylesOpened : bmStylesClosed}
-              >
-                {/* <TransactionList transfers={transfers} /> */}
-              </Menu>
-            )}
+            <Menu
+              isOpen={menuOpen}
+              onStateChange={this.onToggleMenu}
+              customBurgerIcon={
+                menuOpen === true ? (
+                  <Icon name="MenuClose" color={white} />
+                ) : (
+                  <Icon name="Menu" color={black} />
+                )
+              }
+              width="90%"
+              styles={menuOpen === true ? bmStylesOpened : bmStylesClosed}
+            >
+              {/* <TransactionList
+                  authorsList={authorsList}
+                  articlesList={articlesList}
+                /> */}
+              <SidebarMenu currentLocation={history.location.pathname} />
+            </Menu>
             <TitleWrapper>
-              <img src={Logo} alt="logo" width="50px" height="50px" />
+              <img src={Logo} alt="business logo" width="50px" height="50px" />
             </TitleWrapper>
           </Hide>
         </Container>

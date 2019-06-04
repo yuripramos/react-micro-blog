@@ -14,6 +14,7 @@ class Routes extends Component {
           <Route>
             <Switch>
               <Route exact path="/" component={Content} />
+              <Route exact path="/lastarticles" component={NotFound} />
               <Route component={NotFound} />
             </Switch>
           </Route>
