@@ -4,9 +4,8 @@ import { array } from "prop-types";
 // import { isResponsive } from "../../../utils/getResolution";
 
 import { Result, Title, Content } from "./styles";
-
-function TransactionDetail({ authorsList, articlesList }) {
-  console.log("detail", authorsList, articlesList);
+/*eslint-disable*/
+function ArticleDetail({ authorsList, articlesList }) {
   return (
     <Result large>
       {articlesList.map((e, i) => (
@@ -20,9 +19,9 @@ function TransactionDetail({ authorsList, articlesList }) {
   );
 }
 
-export default TransactionDetail;
+export default ArticleDetail;
 
-TransactionDetail.propTypes = {
+ArticleDetail.propTypes = {
   authorsList: array,
   articlesList: array
 };

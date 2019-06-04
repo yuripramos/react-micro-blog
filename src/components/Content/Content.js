@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
 
 import { Container } from "../../styles/grid";
-import TransactionList from "./TransactionList";
+import ArticleList from "./ArticleList";
+import ArticleDetail from "./ArticleDetail";
 import { arrayOf, object, func } from "prop-types";
-import TransactionDetail from "./TransactionDetail";
 import Hide from "../common/Hide";
 import { isResponsive } from "../../utils/getResolution";
 
@@ -31,14 +31,14 @@ class Content extends Component {
             <Fragment>
               <Column width={isResponsive() ? 0 : 35}>
                 <Hide below="lg">
-                  <TransactionList
+                  <ArticleList
                     authorsList={authorsList}
                     articlesList={articlesList}
                   />
                 </Hide>
               </Column>
               <Column width={isResponsive() ? 100 : 65}>
-                <TransactionDetail
+                <ArticleDetail
                   authorsList={authorsList}
                   articlesList={articlesList}
                   innerRef={this.innerRef}

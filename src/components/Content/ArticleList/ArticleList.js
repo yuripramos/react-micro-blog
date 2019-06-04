@@ -12,9 +12,10 @@ import {
   Name,
   Empty
 } from "./styles";
+/*eslint-disable*/
+/*HERE IT GOES THE TITLES LIST AND PUBLISHED DATE */
 
-function TransactionList({ articlesList, authorsList }) {
-  console.log("transaction list", authorsList, articlesList);
+function ArticleList({ articlesList, authorsList }) {
   const isFilled = articlesList.length > 0;
   return (
     <ListWrapper>
@@ -54,9 +55,9 @@ function TransactionList({ articlesList, authorsList }) {
   );
 }
 
-export default TransactionList;
+export default ArticleList;
 
-TransactionList.propTypes = {
+ArticleList.propTypes = {
   authorsList: array,
   articlesList: array
 };
