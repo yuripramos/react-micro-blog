@@ -41,7 +41,11 @@ class ArticleDetail extends Component {
     const isFilled = authorsList && authorsList.length > 0;
     return (
       <Wrapper large>
-        <ContentFilters onFilter={this.onFilter} defaultFilter={filter} />
+        <ContentFilters
+          authorsList={authorsList}
+          onFilter={this.onFilter}
+          defaultFilter={filter}
+        />
         {isFilled &&
           articlesList.map((e, i) => (
             <Article key={`article-${i}`} last={i + 1 === articlesList.length}>

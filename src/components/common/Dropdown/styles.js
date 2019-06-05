@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { media, rem } from "../../../styles/tools";
+import { rem } from "../../../styles/tools";
 import {
   white,
   grey30,
@@ -22,9 +22,7 @@ export const DropdownField = styled.select`
   padding: ${rem(15)} ${rem(15)} 0 ${rem(6.4)};
   transition: 0.3s padding, 0.3s border;
   box-shadow: none;
-  ${media.lg(css`
-    padding: ${rem(15)} ${rem(55)} 0 ${rem(6.4)};
-  `)};
+
   ::-ms-clear {
     display: none !important;
   }
@@ -38,7 +36,6 @@ export const DropdownField = styled.select`
   :not(:focus) {
     ${({ tinyLabels, isEmpty }) => tinyLabels && !isEmpty && revealContent3};
   }
-
 `;
 
 export const DropdownWrapper = styled.div`
@@ -58,7 +55,7 @@ export const DropdownWrapper = styled.div`
   ${({ width }) =>
     width &&
     css`
-      width: ${width}%;
+      width: ${rem(width)};
     `};
 `;
 
@@ -79,4 +76,3 @@ const revealContent3 = css`
     color: ${black50};
   }
 `;
-

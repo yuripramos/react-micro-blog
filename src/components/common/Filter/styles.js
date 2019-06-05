@@ -66,6 +66,7 @@ export const FilterIcon = styled.div`
 export const FilterLabel = styled.h1`
   color: ${white};
   line-height: 1.45;
+  font-size: ${rem(14)};
   padding-left: ${rem(14)};
 
   ${media.md(css`

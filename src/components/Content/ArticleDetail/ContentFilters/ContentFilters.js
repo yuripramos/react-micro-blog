@@ -1,73 +1,82 @@
 import React, { Fragment } from "react";
-import { func, object } from "prop-types";
+import { func, object, arrayOf, string, shape } from "prop-types";
 
 import Filter from "../../../common/Filter";
 import Dropdown from "../../../common/Dropdown";
 import { Label, Wrapper, FormItem } from "./styles";
 
-function ContentFilters({ onFilter, defaultFilter }) {
+function ContentFilters({ authorsList, onFilter, defaultFilter }) {
   const componentLabels = {
     filterButton: "APPLY",
-    filterLabel: "FILTER_BY"
+    filterLabel: "FILTER BY"
   };
+  const authorsArray =
+    authorsList &&
+    authorsList.map(c => {
+      return { name: c.name, value: c.name };
+    });
   return (
-    <Wrapper data-test="DashboardFilters">
-      <Filter
-        onFilter={onFilter}
-        defaultFilterState={defaultFilter}
-        componentLabels={componentLabels}
-      >
-        {(changeFunc, state) => {
-          return (
-            <Fragment>
-              <FormItem>
-                <Label>CATEGORY</Label>
-                <Dropdown
-                  onChange={changeFunc}
-                  name="type"
-                  list={[
-                    {
-                      name: "author",
-                      value: "author"
-                    },
-                    {
-                      name: "last pubs",
-                      value: "last pubs"
-                    }
-                  ]}
-                  value={state && state.filter["type"]}
-                  width={100}
-                  noEmptySelection
-                />
-              </FormItem>
-              {state && state.filter["type"] === "author" && (
+    <Wrapper>
+      {authorsArray && (
+        <Filter
+          onFilter={onFilter}
+          defaultFilterState={defaultFilter}
+          componentLabels={componentLabels}
+        >
+          {(changeFunc, state) => {
+            return (
+              <Fragment>
                 <FormItem>
-                  <Label>PERIOD</Label>
+                  <Label>TYPE</Label>
                   <Dropdown
                     onChange={changeFunc}
-                    name="range"
+                    name="type"
                     list={[
-                      { name: "author 1", value: 15 },
-                      { name: "author 2", value: 30 },
-                      { name: "author 3", value: 60 }
+                      {
+                        name: "author",
+                        value: "author"
+                      },
+                      {
+                        name: "last pubs",
+                        value: "last pubs"
+                      }
                     ]}
-                    value={state && state.filter["range"]}
+                    value={state && state.filter["type"]}
                     width={100}
                     noEmptySelection
                   />
                 </FormItem>
-              )}
-            </Fragment>
-          );
-        }}
-      </Filter>
+                {state && state.filter["type"] === "author" && (
+                  <FormItem>
+                    <Label>Author</Label>
+                    <Dropdown
+                      onChange={changeFunc}
+                      name="range"
+                      list={authorsArray}
+                      value={state && state.filter["range"]}
+                      width={240}
+                      noEmptySelection
+                    />
+                  </FormItem>
+                )}
+              </Fragment>
+            );
+          }}
+        </Filter>
+      )}
     </Wrapper>
   );
 }
 
 ContentFilters.propTypes = {
   onFilter: func.isRequired,
-  defaultFilter: object
+  defaultFilter: object,
+  authorsList: arrayOf(
+    shape({
+      name: string,
+      id: Number
+    })
+  )
 };
 
 export default ContentFilters;
