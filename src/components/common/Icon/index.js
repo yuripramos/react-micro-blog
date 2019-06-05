@@ -2,7 +2,7 @@ import React from "react";
 import { string } from "prop-types";
 
 /*ICONS*/
-import Transactions from "./Transactions";
+import Papers from "./Papers";
 import NotFound from "./NotFound";
 import Wallet from "./Wallet";
 import Menu from "./Menu";
@@ -13,8 +13,8 @@ const IconGenerator = props => {
   switch (props.name) {
     case "NotFound":
       return <NotFound {...props} />;
-    case "Transactions":
-      return <Transactions {...props} />;
+    case "Papers":
+      return <Papers {...props} />;
     case "Wallet":
       return <Wallet {...props} />;
     case "Menu":

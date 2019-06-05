@@ -23,9 +23,9 @@ export const ListWrapper = styled.div`
   background: ${lighestgrey};
   color: ${black};
   height: 92.4vh;
-  min-width: ${rem(300)};
+  min-width: ${rem(200)};
   ${media.lg(css`
-    min-width: ${rem(436)};
+    width: ${rem(360)};
   `)};
   align-content: flex-start;
   overflow-y: auto;
@@ -37,14 +37,14 @@ export const Empty = styled.div`
 
 export const Item = styled.div`
   width: 100%;
-  padding: ${rem(35)} ${rem(30)};
+  padding: ${rem(18)} ${rem(30)};
   border-bottom: solid 1px ${grey10};
   height: ${rem(60)};
   display: inline-flex;
 `;
 
 export const Name = styled.div`
-  width: ${rem(165)};
+  width: ${rem(215)};
   text-align: left;
   text-transform: capitalize;
   text-overflow: ellipsis;
@@ -74,11 +74,6 @@ export const Description = styled.div`
     `};
 `;
 
-export const Arrow = styled.span`
-  position: relative;
-  transform: translate(-15px, 50px);
-`;
-
 export const InfoStyle = styled.div`
   font-size: ${rem(11)};
   width: 100%;
@@ -89,7 +84,7 @@ export const InfoStyle = styled.div`
   height: ${rem(15)};
 `;
 export const AccInfo = styled.div`
-  width: 50%;
+  width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   margin-top: ${rem(-15)};

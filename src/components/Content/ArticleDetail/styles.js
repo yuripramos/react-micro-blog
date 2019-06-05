@@ -1,17 +1,9 @@
 import styled, { css } from "styled-components";
 import { rem, media } from "../../../styles/tools";
-import {
-  trueWhite,
-  darkGreen,
-  grey90,
-  blue30,
-  grey180,
-  red
-} from "../../../styles/settings";
+import { trueWhite, darkGreen, grey90 } from "../../../styles/settings";
 import { InputWrapper, InputField } from "../../common/Input/styles";
-import { default as ButtonRaw } from "../../common/Button";
 
-export const Result = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
   overflow-x: hidden;
   margin: 0 auto;
@@ -41,25 +33,16 @@ export const DashboardWrapper = styled.div`
   `)};
 `;
 
-export const Currency = styled.span`
-  color: ${grey180};
+export const FooterInfo = styled.span`
+  color: ${grey90};
   margin: ${rem(4.5)} 0 0 0;
-  font-size: ${rem(20)};
-    ${({ inDebt }) =>
-    inDebt &&
-    css`
-      color: ${red}
-    `};
+  font-size: ${rem(14)};
+  padding: ${rem(5)};
 `;
 
-export const Button = styled(ButtonRaw)`
-  height: ${rem(50)};
-  line-height: ${rem(40)};
-  width: ${rem(150)};
-
-  :not(:last-child) {
-    margin-right: ${rem(12)};
-  }
+export const FooterWrapper = styled.span`
+  padding: ${rem(10)};
+  display: inline-flex;
 `;
 
 export const Title = styled.h1`
@@ -67,38 +50,6 @@ export const Title = styled.h1`
   margin: ${rem(25)} 0 ${rem(10)};
   color: ${darkGreen};
   width: 100%;
-`;
-
-export const Fieldset = styled.div`
-  padding: ${rem(14)};
-  margin: ${rem(12)} ${rem(10)};
-  height: ${rem(180)};
-  color: ${grey90};
-  border: solid ${rem(1)} ${blue30};
-  border-radius: ${rem(4)};
-  align-items: center;
-  justify-content: space-between;
-  display: inline-flex;
-  flex-wrap: wrap;
-  ${media.md(css`
-    margin: ${rem(20)} ${rem(5)};
-  `)};
-  ${({ width }) =>
-    width &&
-    css`
-      width: ${width}%;
-    `};
-  ${({ adjust }) =>
-    adjust &&
-    css`
-      transform: translateY(${adjust}px);
-    `};
-
-  ${({ withRows }) =>
-    withRows &&
-    css`
-      padding: ${rem(24)} ${rem(30)};
-    `};
 `;
 
 export const Content = styled.div`
@@ -114,15 +65,6 @@ export const Content = styled.div`
     margin: ${rem(9)} ${rem(6)} ${rem(9)} 0;
     height: ${rem(48)};
   }
-`;
-
-export const FieldsetTitle = styled.span`
-  color: ${grey90};
-  font-size: ${rem(10)};
-  letter-spacing: ${rem(0.2)};
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Lato;
 `;
 
 export const TitleWrapper = styled.div`

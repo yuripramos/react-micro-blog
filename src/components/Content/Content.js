@@ -29,7 +29,7 @@ class Content extends Component {
         <ContentWrapper>
           {isFilled && (
             <Fragment>
-              <Column width={isResponsive() ? 0 : 35}>
+              <Column width={isResponsive() ? 0 : 30}>
                 <Hide below="lg">
                   <ArticleList
                     authorsList={authorsList}
@@ -37,7 +37,7 @@ class Content extends Component {
                   />
                 </Hide>
               </Column>
-              <Column width={isResponsive() ? 100 : 65}>
+              <Column width={isResponsive() ? 100 : 70}>
                 <ArticleDetail
                   authorsList={authorsList}
                   articlesList={articlesList}

@@ -39,7 +39,7 @@
     ],
     "max-len": [
       2,
-      120,
+      180,
       2,
       {
         "ignoreUrls": true

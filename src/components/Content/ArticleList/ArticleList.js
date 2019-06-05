@@ -1,6 +1,7 @@
 import React from "react";
 import { array } from "prop-types";
 import Icon from "../../common/Icon";
+import moment from "moment";
 import {
   Title,
   Item,
@@ -8,7 +9,6 @@ import {
   Description,
   AccInfo,
   InfoStyle,
-  Arrow,
   Name,
   Empty
 } from "./styles";
@@ -25,26 +25,12 @@ function ArticleList({ articlesList, authorsList }) {
           <Item key={i}>
             <AccInfo>
               <Description recipient>
-                <Icon name="Transactions" />
+                <Icon name="Papers" />
               </Description>
-              <InfoStyle>Origin Acc: INFO 1</InfoStyle>
-              <InfoStyle>Document: INFO 2</InfoStyle>
-              <Name>name name</Name>
-            </AccInfo>
-            <Arrow>
-              {" "}
-              <Icon name="To" width="25px" height="25px" />{" "}
-            </Arrow>
-            <AccInfo spacing="true">
-              <Description>
-                {/* {e.dueDate} / R$ {e.ammount && formatNumber(e.ammount)} */}
-              </Description>
-              <InfoStyle>{`data:01/10/2018 - hour:xx:xx:xx`}</InfoStyle>
-              {/* <InfoStyle>
-                {e.documentType.toUpperCase()}
-                {`: ${e.document}`}
-              </InfoStyle> */}
-              <Name>{e.favoredName}</Name>
+              <Name>{e.title}</Name>
+              <InfoStyle>{`Published at:${moment(e.metadata.publishedAt).format(
+                "L"
+              )}`}</InfoStyle>
             </AccInfo>
           </Item>
         ))
