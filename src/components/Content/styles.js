@@ -12,9 +12,6 @@ export const ContentWrapper = styled.div`
   height: 88.5vh;
 
   margin: 0 auto;
-  ${media.md(css`
-    padding: ${rem(0)} ${rem(10)};
-  `)};
   ${media.lg(css`
     height: 92vh;
   `)};

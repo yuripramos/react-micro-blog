@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
     text-align: center;
   `)};
   ${media.lg(css`
-    height: 7vh;
+    height: 10vh;
     padding-top: ${rem(6)};
   `)};
 `;

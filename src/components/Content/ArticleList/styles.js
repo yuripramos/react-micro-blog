@@ -22,7 +22,7 @@ export const ListWrapper = styled.div`
   flex-wrap: wrap;
   background: ${lighestgrey};
   color: ${black};
-  height: 92.4vh;
+  height: 91vh;
   min-width: ${rem(200)};
   ${media.lg(css`
     width: ${rem(360)};
