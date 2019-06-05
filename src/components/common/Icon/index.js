@@ -7,7 +7,8 @@ import NotFound from "./NotFound";
 import Wallet from "./Wallet";
 import Menu from "./Menu";
 import MenuClose from "./MenuClose";
-import To from "./To";
+import Filter from "./Filter";
+import Arrow from "./Arrow";
 
 const IconGenerator = props => {
   switch (props.name) {
@@ -21,8 +22,10 @@ const IconGenerator = props => {
       return <Menu {...props} />;
     case "MenuClose":
       return <MenuClose {...props} />;
-    case "To":
-      return <To {...props} />;
+    case "Filter":
+      return <Filter {...props} />;
+    case "Arrow":
+      return <Arrow {...props} />;
     default:
       return;
   }

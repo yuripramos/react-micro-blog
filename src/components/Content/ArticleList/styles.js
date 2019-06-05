@@ -12,7 +12,7 @@ export const Title = styled.span`
   font-size: ${rem(16)};
   color: ${green};
   text-align: center;
-  font-weight: 700;
+  font-weight: 700
   width: 100%;
   padding: ${rem(10)};
 `;

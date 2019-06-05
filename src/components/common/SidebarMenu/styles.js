@@ -73,7 +73,6 @@ export const Item = styled.div`
       cursor: initial;
       color: ${white};
       font-weight: 600;
-      border-top: solid ${rem(2)} ${white};
     `};
 `;
 

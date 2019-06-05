@@ -32,6 +32,13 @@ export const DashboardWrapper = styled.div`
     padding: ${rem(25)} 0;
   `)};
 `;
+export const Article = styled.div`
+  ${({ last }) =>
+    last &&
+    css`
+      padding-bottom: ${rem(15)};
+    `};
+`;
 
 export const FooterInfo = styled.span`
   color: ${grey90};
