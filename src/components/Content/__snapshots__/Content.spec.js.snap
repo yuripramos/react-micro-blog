@@ -1,0 +1,495 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Content
+    getArticles={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    getAuthors={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "blacklist": Array [
+        "css",
+        "width",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "fontSize",
+        "color",
+        "bg",
+        "flex",
+        "order",
+        "alignSelf",
+      ],
+      "children": <ForwardRef />,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": undefined,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gisBJw",
+          "isStatic": true,
+          "rules": Array [
+            "
+  text-align: center;
+  color: #000;
+  padding: 0;
+  min-height: ",
+            "15.625rem",
+            ";
+  width: 100%;
+  display: inline-flex;
+  height: 88.5vh;
+
+  margin: 0 auto;
+  ",
+            "
+    @media (min-width: ",
+            "73.6875rem",
+            ") {
+      ",
+            "
+    height: 92vh;
+  ",
+            ";
+    }
+  ",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-gisBJw",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-htpNat",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          "box-sizing: border-box;",
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          "
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ",
+          "41.875rem",
+          ";
+  padding: 0 ",
+          "0.9375rem",
+          ";
+  ",
+          "
+    @media (min-width: ",
+          "62rem",
+          ") {
+      ",
+          "
+    max-width: ",
+          "61.3125rem",
+          ";
+  ",
+          ";
+    }
+  ",
+          ";
+
+  ",
+          "
+    @media (min-width: ",
+          "73.6875rem",
+          ") {
+      ",
+          "
+    max-width: ",
+          "79.9375rem",
+          ";
+  ",
+          ";
+    }
+  ",
+          ";
+",
+        ],
+      },
+      "defaultProps": Object {
+        "blacklist": Array [
+          "css",
+          "width",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "fontSize",
+          "color",
+          "bg",
+          "flex",
+          "order",
+          "alignSelf",
+        ],
+      },
+      "displayName": "Container",
+      "foldedComponentIds": Array [
+        "sc-bdVaJa",
+      ],
+      "propTypes": Object {
+        "alignSelf": [Function],
+        "bg": [Function],
+        "color": [Function],
+        "flex": [Function],
+        "fontSize": [Function],
+        "m": [Function],
+        "mb": [Function],
+        "ml": [Function],
+        "mr": [Function],
+        "mt": [Function],
+        "mx": [Function],
+        "my": [Function],
+        "order": [Function],
+        "p": [Function],
+        "pb": [Function],
+        "pl": [Function],
+        "pr": [Function],
+        "pt": [Function],
+        "px": [Function],
+        "py": [Function],
+        "width": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-htpNat",
+      "systemComponent": true,
+      "target": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "blacklist": Array [
+          "css",
+          "width",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "fontSize",
+          "color",
+          "bg",
+          "flex",
+          "order",
+          "alignSelf",
+        ],
+        "children": <ForwardRef />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gisBJw",
+            "isStatic": true,
+            "rules": Array [
+              "
+  text-align: center;
+  color: #000;
+  padding: 0;
+  min-height: ",
+              "15.625rem",
+              ";
+  width: 100%;
+  display: inline-flex;
+  height: 88.5vh;
+
+  margin: 0 auto;
+  ",
+              "
+    @media (min-width: ",
+              "73.6875rem",
+              ") {
+      ",
+              "
+    height: 92vh;
+  ",
+              ";
+    }
+  ",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gisBJw",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "rules": Array [
+            [Function],
+            "box-sizing: border-box;",
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            "
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ",
+            "41.875rem",
+            ";
+  padding: 0 ",
+            "0.9375rem",
+            ";
+  ",
+            "
+    @media (min-width: ",
+            "62rem",
+            ") {
+      ",
+            "
+    max-width: ",
+            "61.3125rem",
+            ";
+  ",
+            ";
+    }
+  ",
+            ";
+
+  ",
+            "
+    @media (min-width: ",
+            "73.6875rem",
+            ") {
+      ",
+            "
+    max-width: ",
+            "79.9375rem",
+            ";
+  ",
+            ";
+    }
+  ",
+            ";
+",
+          ],
+        },
+        "defaultProps": Object {
+          "blacklist": Array [
+            "css",
+            "width",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "fontSize",
+            "color",
+            "bg",
+            "flex",
+            "order",
+            "alignSelf",
+          ],
+        },
+        "displayName": "Container",
+        "foldedComponentIds": Array [
+          "sc-bdVaJa",
+        ],
+        "propTypes": Object {
+          "alignSelf": [Function],
+          "bg": [Function],
+          "color": [Function],
+          "flex": [Function],
+          "fontSize": [Function],
+          "m": [Function],
+          "mb": [Function],
+          "ml": [Function],
+          "mr": [Function],
+          "mt": [Function],
+          "mx": [Function],
+          "my": [Function],
+          "order": [Function],
+          "p": [Function],
+          "pb": [Function],
+          "pl": [Function],
+          "pr": [Function],
+          "pt": [Function],
+          "px": [Function],
+          "py": [Function],
+          "width": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "systemComponent": true,
+        "target": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;

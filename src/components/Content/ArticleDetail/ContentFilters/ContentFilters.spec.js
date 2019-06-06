@@ -5,8 +5,8 @@ import ContentFilters from "./ContentFilters";
 const props = {
   onFilter: jest.fn(),
   defaultFilter: {
-    type: "history",
-    range: 15
+    type: "author",
+    range: 5
   }
 };
 

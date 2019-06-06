@@ -83,7 +83,7 @@ export const InfoStyle = styled.div`
   font-weight: 300;
   height: ${rem(15)};
 `;
-export const AccInfo = styled.div`
+export const Info = styled.div`
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;

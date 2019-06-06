@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { array } from "prop-types";
 import moment from "moment";
 import ContentFilters from "./ContentFilters";
-/*eslint-disable*/
 import { findById, filterArtistByName } from "../../../utils/filters";
-// import { Row } from "../../../styles/grid";
-// import { isResponsive } from "../../../utils/getResolution";
 
 import {
   Wrapper,
@@ -16,7 +13,6 @@ import {
   Article
 } from "./styles";
 
-/*eslint-disable*/
 class ArticleDetail extends Component {
   constructor(props) {
     super(props);
@@ -38,13 +34,15 @@ class ArticleDetail extends Component {
       articlesDisplayed: filterArtistByName(
         authorsList,
         articlesList,
-        filter.range
+        filter.range,
+        filter.type
       )
     });
   }
 
   componentDidMount() {
     const { authorsList, articlesList } = this.props;
+
     const isFilled = authorsList && authorsList.length > 0;
     isFilled &&
       this.setState({
@@ -53,7 +51,7 @@ class ArticleDetail extends Component {
   }
 
   render() {
-    const { authorsList, articlesList } = this.props;
+    const { authorsList } = this.props;
     const { filter, articlesDisplayed } = this.state;
     const isFilled = authorsList && authorsList.length > 0;
     return (
@@ -63,7 +61,7 @@ class ArticleDetail extends Component {
           onFilter={this.onFilter}
           defaultFilter={filter}
         />
-        {isFilled ? (
+        {!!isFilled ? (
           articlesDisplayed.map((e, i) => (
             <Article
               key={`article-${i}`}

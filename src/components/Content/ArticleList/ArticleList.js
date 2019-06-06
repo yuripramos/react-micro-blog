@@ -7,15 +7,13 @@ import {
   Item,
   ListWrapper,
   Description,
-  AccInfo,
+  Info,
   InfoStyle,
   Name,
   Empty
 } from "./styles";
-/*eslint-disable*/
-/*HERE IT GOES THE TITLES LIST AND PUBLISHED DATE */
 
-function ArticleList({ articlesList, authorsList }) {
+function ArticleList({ articlesList }) {
   const isFilled = articlesList.length > 0;
   return (
     <ListWrapper>
@@ -23,7 +21,7 @@ function ArticleList({ articlesList, authorsList }) {
       {isFilled ? (
         articlesList.map((e, i) => (
           <Item key={i}>
-            <AccInfo>
+            <Info>
               <Description recipient>
                 <Icon name="Papers" />
               </Description>
@@ -31,7 +29,7 @@ function ArticleList({ articlesList, authorsList }) {
               <InfoStyle>{`Published at:${moment(e.metadata.publishedAt).format(
                 "L"
               )}`}</InfoStyle>
-            </AccInfo>
+            </Info>
           </Item>
         ))
       ) : (
@@ -44,6 +42,5 @@ function ArticleList({ articlesList, authorsList }) {
 export default ArticleList;
 
 ArticleList.propTypes = {
-  authorsList: array,
   articlesList: array
 };

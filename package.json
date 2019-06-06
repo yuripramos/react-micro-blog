@@ -8,6 +8,7 @@
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
+    "array-sort-by": "^1.2.1",
     "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -20,6 +21,7 @@
     "css-loader": "1.0.0",
     "dotenv": "^8.0.0",
     "dotenv-expand": "^5.1.0",
+    "enzyme": "^3.10.0",
     "eslint": "5.12.0",
     "eslint-config-react-app": "^3.0.8",
     "eslint-loader": "2.1.1",
@@ -89,6 +91,7 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts"
     ],
+    "setupTestFrameworkScriptFile": "<rootDir>/setupEnzyme.js",
     "resolver": "jest-pnp-resolver",
     "setupFiles": [
       "react-app-polyfill/jsdom"
@@ -134,5 +137,7 @@
       "react-app"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "enzyme-adapter-react-16": "^1.14.0"
+  }
 }

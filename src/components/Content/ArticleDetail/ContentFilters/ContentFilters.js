@@ -15,7 +15,7 @@ function ContentFilters({ authorsList, onFilter, defaultFilter }) {
     authorsList.map(c => {
       return { name: c.name, value: c.name };
     });
-  authorsArray.unshift({ name: "", value: "" });
+  authorsList && authorsArray.unshift({ name: "", value: "" });
   return (
     <Wrapper>
       {authorsArray && (
@@ -38,8 +38,12 @@ function ContentFilters({ authorsList, onFilter, defaultFilter }) {
                         value: "author"
                       },
                       {
-                        name: "last pubs",
-                        value: "last pubs"
+                        name: "recent",
+                        value: "recent"
+                      },
+                      {
+                        name: "oldest",
+                        value: "oldest"
                       }
                     ]}
                     value={state && state.filter["type"]}
@@ -55,7 +59,7 @@ function ContentFilters({ authorsList, onFilter, defaultFilter }) {
                       name="range"
                       list={authorsArray}
                       value={state && state.filter["range"]}
-                      width={240}
+                      width={230}
                       noEmptySelection
                     />
                   </FormItem>
