@@ -15,6 +15,7 @@ function ContentFilters({ authorsList, onFilter, defaultFilter }) {
     authorsList.map(c => {
       return { name: c.name, value: c.name };
     });
+  authorsArray.unshift({ name: "", value: "" });
   return (
     <Wrapper>
       {authorsArray && (

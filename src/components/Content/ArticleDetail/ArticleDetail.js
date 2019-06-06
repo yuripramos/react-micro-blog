@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { array } from "prop-types";
 import moment from "moment";
 import ContentFilters from "./ContentFilters";
-import { findById } from "../../../utils/filters";
+/*eslint-disable*/
+import { findById, filterArtistByName } from "../../../utils/filters";
 // import { Row } from "../../../styles/grid";
 // import { isResponsive } from "../../../utils/getResolution";
 
@@ -24,20 +25,36 @@ class ArticleDetail extends Component {
       filter: {
         type: "author",
         range: 5
-      }
+      },
+      articlesDisplayed: []
     };
     this.onFilter = this.onFilter.bind(this);
   }
 
   onFilter(filter) {
+    const { authorsList, articlesList } = this.props;
     this.setState({
-      filter
+      filter,
+      articlesDisplayed: filterArtistByName(
+        authorsList,
+        articlesList,
+        filter.range
+      )
     });
+  }
+
+  componentDidMount() {
+    const { authorsList, articlesList } = this.props;
+    const isFilled = authorsList && authorsList.length > 0;
+    isFilled &&
+      this.setState({
+        articlesDisplayed: articlesList
+      });
   }
 
   render() {
     const { authorsList, articlesList } = this.props;
-    const { filter } = this.state;
+    const { filter, articlesDisplayed } = this.state;
     const isFilled = authorsList && authorsList.length > 0;
     return (
       <Wrapper large>
@@ -46,9 +63,12 @@ class ArticleDetail extends Component {
           onFilter={this.onFilter}
           defaultFilter={filter}
         />
-        {isFilled &&
-          articlesList.map((e, i) => (
-            <Article key={`article-${i}`} last={i + 1 === articlesList.length}>
+        {isFilled ? (
+          articlesDisplayed.map((e, i) => (
+            <Article
+              key={`article-${i}`}
+              last={i + 1 === articlesDisplayed.length}
+            >
               <Title>{e.title}</Title>
               <Content>{e.body}</Content>
               <FooterWrapper>
@@ -60,7 +80,10 @@ class ArticleDetail extends Component {
                 </FooterInfo>
               </FooterWrapper>
             </Article>
-          ))}
+          ))
+        ) : (
+          <span>No content to display, please try again</span>
+        )}
       </Wrapper>
     );
   }
