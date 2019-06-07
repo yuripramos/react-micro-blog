@@ -89,7 +89,8 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+      "!src/**/*.d.ts",
+      "src/services/**/*.js"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/setupEnzyme.js",
     "resolver": "jest-pnp-resolver",
