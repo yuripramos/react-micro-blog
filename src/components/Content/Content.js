@@ -55,8 +55,6 @@ class Content extends Component {
 Content.defaultProps = {};
 
 Content.propTypes = {
-  transfers: arrayOf(object),
-  totalBalance: func,
   getArticles: func,
   getAuthors: func,
   articlesList: arrayOf(object),

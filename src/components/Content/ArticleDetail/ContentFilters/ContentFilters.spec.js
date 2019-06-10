@@ -6,7 +6,7 @@ const props = {
   onFilter: jest.fn(),
   defaultFilter: {
     type: "author",
-    range: 5
+    author: "no name"
   }
 };
 

@@ -1,27 +1,1639 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header component should match snapshot with props 1`] = `
-<styled.header>
-  <Container>
-    <Row>
-      <Column>
-        <styled.div>
-          <IconGenerator
-            color="#333"
-            height="56px"
-            name="Logo"
-            width="490px"
-          />
-        </styled.div>
-      </Column>
-    </Row>
-    <Row>
-      <Column>
-        <SidebarMenu
-          currentLocation=""
-        />
-      </Column>
-    </Row>
-  </Container>
-</styled.header>
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    history={
+      Object {
+        "location": Object {
+          "pathname": "",
+        },
+        "push": [MockFunction],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <ForwardRef
+        blacklist={
+          Array [
+            "css",
+            "width",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "fontSize",
+            "color",
+            "bg",
+            "flex",
+            "order",
+            "alignSelf",
+          ]
+        }
+        onClick={[Function]}
+      >
+        <Hide
+          above={null}
+          below="lg"
+        >
+          <Row>
+            <Column>
+              <SidebarMenu
+                currentLocation=""
+                desktop={true}
+              />
+            </Column>
+            <Column>
+              <ForwardRef>
+                <img
+                  alt="business logo"
+                  height="44px"
+                  src="logo.png"
+                  width="44px"
+                />
+              </ForwardRef>
+            </Column>
+          </Row>
+        </Hide>
+        <Hide
+          above="lg"
+          below={null}
+        >
+          <Menu
+            bodyClassName=""
+            burgerBarClassName=""
+            burgerButtonClassName=""
+            className=""
+            crossButtonClassName=""
+            crossClassName=""
+            customBurgerIcon={
+              <IconGenerator
+                color="#333"
+                name="Menu"
+              />
+            }
+            disableAutoFocus={false}
+            disableCloseOnEsc={false}
+            htmlClassName=""
+            id=""
+            isOpen={false}
+            itemClassName=""
+            itemListClassName=""
+            menuClassName=""
+            morphShapeClassName=""
+            noOverlay={false}
+            onStateChange={[Function]}
+            outerContainerId=""
+            overlayClassName=""
+            pageWrapId=""
+            styles={
+              Object {
+                "bmBurgerButton": Object {
+                  "cursor": "pointer",
+                  "display": "inline-block",
+                  "left": "1.5625rem",
+                  "padding": "0.125rem",
+                  "position": "absolute",
+                  "top": "1.25rem",
+                },
+                "bmMenuWrap": Object {
+                  "left": 0,
+                },
+              }
+            }
+            width="90%"
+          >
+            <SidebarMenu
+              currentLocation=""
+            />
+          </Menu>
+          <ForwardRef>
+            <img
+              alt="business logo"
+              height="50px"
+              src="logo.png"
+              width="50px"
+            />
+          </ForwardRef>
+        </Hide>
+      </ForwardRef>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "blacklist": Array [
+          "css",
+          "width",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "fontSize",
+          "color",
+          "bg",
+          "flex",
+          "order",
+          "alignSelf",
+        ],
+        "children": Array [
+          <Hide
+            above={null}
+            below="lg"
+          >
+            <Row>
+              <Column>
+                <SidebarMenu
+                  currentLocation=""
+                  desktop={true}
+                />
+              </Column>
+              <Column>
+                <ForwardRef>
+                  <img
+                    alt="business logo"
+                    height="44px"
+                    src="logo.png"
+                    width="44px"
+                  />
+                </ForwardRef>
+              </Column>
+            </Row>
+          </Hide>,
+          <Hide
+            above="lg"
+            below={null}
+          >
+            <Menu
+              bodyClassName=""
+              burgerBarClassName=""
+              burgerButtonClassName=""
+              className=""
+              crossButtonClassName=""
+              crossClassName=""
+              customBurgerIcon={
+                <IconGenerator
+                  color="#333"
+                  name="Menu"
+                />
+              }
+              disableAutoFocus={false}
+              disableCloseOnEsc={false}
+              htmlClassName=""
+              id=""
+              isOpen={false}
+              itemClassName=""
+              itemListClassName=""
+              menuClassName=""
+              morphShapeClassName=""
+              noOverlay={false}
+              onStateChange={[Function]}
+              outerContainerId=""
+              overlayClassName=""
+              pageWrapId=""
+              styles={
+                Object {
+                  "bmBurgerButton": Object {
+                    "cursor": "pointer",
+                    "display": "inline-block",
+                    "left": "1.5625rem",
+                    "padding": "0.125rem",
+                    "position": "absolute",
+                    "top": "1.25rem",
+                  },
+                  "bmMenuWrap": Object {
+                    "left": 0,
+                  },
+                }
+              }
+              width="90%"
+            >
+              <SidebarMenu
+                currentLocation=""
+              />
+            </Menu>
+            <ForwardRef>
+              <img
+                alt="business logo"
+                height="50px"
+                src="logo.png"
+                width="50px"
+              />
+            </ForwardRef>
+          </Hide>,
+        ],
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "above": null,
+            "below": "lg",
+            "children": <Row>
+              <Column>
+                <SidebarMenu
+                  currentLocation=""
+                  desktop={true}
+                />
+              </Column>
+              <Column>
+                <ForwardRef>
+                  <img
+                    alt="business logo"
+                    height="44px"
+                    src="logo.png"
+                    width="44px"
+                  />
+                </ForwardRef>
+              </Column>
+            </Row>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Column>
+                  <SidebarMenu
+                    currentLocation=""
+                    desktop={true}
+                  />
+                </Column>,
+                <Column>
+                  <ForwardRef>
+                    <img
+                      alt="business logo"
+                      height="44px"
+                      src="logo.png"
+                      width="44px"
+                    />
+                  </ForwardRef>
+                </Column>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <SidebarMenu
+                    currentLocation=""
+                    desktop={true}
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "currentLocation": "",
+                    "desktop": true,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <ForwardRef>
+                    <img
+                      alt="business logo"
+                      height="44px"
+                      src="logo.png"
+                      width="44px"
+                    />
+                  </ForwardRef>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <img
+                      alt="business logo"
+                      height="44px"
+                      src="logo.png"
+                      width="44px"
+                    />,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "business logo",
+                      "height": "44px",
+                      "src": "logo.png",
+                      "width": "44px",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-VigVT",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  display: inline-flex;
+  width: 50%;
+  font-size: ",
+                        "1.75rem",
+                        ";
+  ",
+                        "
+    @media (min-width: ",
+                        "28.0625rem",
+                        ") {
+      ",
+                        "
+    width: 95%;
+    justify-content: flex-end;
+  ",
+                        ";
+    }
+  ",
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-VigVT",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "above": "lg",
+            "below": null,
+            "children": Array [
+              <Menu
+                bodyClassName=""
+                burgerBarClassName=""
+                burgerButtonClassName=""
+                className=""
+                crossButtonClassName=""
+                crossClassName=""
+                customBurgerIcon={
+                  <IconGenerator
+                    color="#333"
+                    name="Menu"
+                  />
+                }
+                disableAutoFocus={false}
+                disableCloseOnEsc={false}
+                htmlClassName=""
+                id=""
+                isOpen={false}
+                itemClassName=""
+                itemListClassName=""
+                menuClassName=""
+                morphShapeClassName=""
+                noOverlay={false}
+                onStateChange={[Function]}
+                outerContainerId=""
+                overlayClassName=""
+                pageWrapId=""
+                styles={
+                  Object {
+                    "bmBurgerButton": Object {
+                      "cursor": "pointer",
+                      "display": "inline-block",
+                      "left": "1.5625rem",
+                      "padding": "0.125rem",
+                      "position": "absolute",
+                      "top": "1.25rem",
+                    },
+                    "bmMenuWrap": Object {
+                      "left": 0,
+                    },
+                  }
+                }
+                width="90%"
+              >
+                <SidebarMenu
+                  currentLocation=""
+                />
+              </Menu>,
+              <ForwardRef>
+                <img
+                  alt="business logo"
+                  height="50px"
+                  src="logo.png"
+                  width="50px"
+                />
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bodyClassName": "",
+                "burgerBarClassName": "",
+                "burgerButtonClassName": "",
+                "children": <SidebarMenu
+                  currentLocation=""
+                />,
+                "className": "",
+                "crossButtonClassName": "",
+                "crossClassName": "",
+                "customBurgerIcon": <IconGenerator
+                  color="#333"
+                  name="Menu"
+                />,
+                "disableAutoFocus": false,
+                "disableCloseOnEsc": false,
+                "htmlClassName": "",
+                "id": "",
+                "isOpen": false,
+                "itemClassName": "",
+                "itemListClassName": "",
+                "menuClassName": "",
+                "morphShapeClassName": "",
+                "noOverlay": false,
+                "onStateChange": [Function],
+                "outerContainerId": "",
+                "overlayClassName": "",
+                "pageWrapId": "",
+                "styles": Object {
+                  "bmBurgerButton": Object {
+                    "cursor": "pointer",
+                    "display": "inline-block",
+                    "left": "1.5625rem",
+                    "padding": "0.125rem",
+                    "position": "absolute",
+                    "top": "1.25rem",
+                  },
+                  "bmMenuWrap": Object {
+                    "left": 0,
+                  },
+                },
+                "width": "90%",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "currentLocation": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <img
+                  alt="business logo"
+                  height="50px"
+                  src="logo.png"
+                  width="50px"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "business logo",
+                  "height": "50px",
+                  "src": "logo.png",
+                  "width": "50px",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-VigVT",
+                  "isStatic": true,
+                  "rules": Array [
+                    "
+  display: inline-flex;
+  width: 50%;
+  font-size: ",
+                    "1.75rem",
+                    ";
+  ",
+                    "
+    @media (min-width: ",
+                    "28.0625rem",
+                    ") {
+      ",
+                    "
+    width: 95%;
+    justify-content: flex-end;
+  ",
+                    ";
+    }
+  ",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-VigVT",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "rules": Array [
+            [Function],
+            "box-sizing: border-box;",
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            "
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ",
+            "41.875rem",
+            ";
+  padding: 0 ",
+            "0.9375rem",
+            ";
+  ",
+            "
+    @media (min-width: ",
+            "62rem",
+            ") {
+      ",
+            "
+    max-width: ",
+            "61.3125rem",
+            ";
+  ",
+            ";
+    }
+  ",
+            ";
+
+  ",
+            "
+    @media (min-width: ",
+            "73.6875rem",
+            ") {
+      ",
+            "
+    max-width: ",
+            "79.9375rem",
+            ";
+  ",
+            ";
+    }
+  ",
+            ";
+",
+          ],
+        },
+        "defaultProps": Object {
+          "blacklist": Array [
+            "css",
+            "width",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "fontSize",
+            "color",
+            "bg",
+            "flex",
+            "order",
+            "alignSelf",
+          ],
+        },
+        "displayName": "Container",
+        "foldedComponentIds": Array [
+          "sc-bdVaJa",
+        ],
+        "propTypes": Object {
+          "alignSelf": [Function],
+          "bg": [Function],
+          "color": [Function],
+          "flex": [Function],
+          "fontSize": [Function],
+          "m": [Function],
+          "mb": [Function],
+          "ml": [Function],
+          "mr": [Function],
+          "mt": [Function],
+          "mx": [Function],
+          "my": [Function],
+          "order": [Function],
+          "p": [Function],
+          "pb": [Function],
+          "pl": [Function],
+          "pr": [Function],
+          "pt": [Function],
+          "px": [Function],
+          "py": [Function],
+          "width": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "systemComponent": true,
+        "target": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-gZMcBi",
+        "isStatic": true,
+        "rules": Array [
+          "
+  height: ",
+          "3.625rem",
+          ";
+  padding-top: ",
+          "0.625rem",
+          ";
+  background: ",
+          "#34b896",
+          ";
+  text-align: center;
+  ",
+          "
+    @media (min-width: ",
+          "62rem",
+          ") {
+      ",
+          "
+    text-align: center;
+  ",
+          ";
+    }
+  ",
+          ";
+  ",
+          "
+    @media (min-width: ",
+          "73.6875rem",
+          ") {
+      ",
+          "
+    height: 10vh;
+    padding-top: ",
+          "0.375rem",
+          ";
+  ",
+          ";
+    }
+  ",
+          ";
+",
+        ],
+      },
+      "displayName": "styled.header",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-gZMcBi",
+      "target": "header",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ForwardRef
+          blacklist={
+            Array [
+              "css",
+              "width",
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "fontSize",
+              "color",
+              "bg",
+              "flex",
+              "order",
+              "alignSelf",
+            ]
+          }
+          onClick={[Function]}
+        >
+          <Hide
+            above={null}
+            below="lg"
+          >
+            <Row>
+              <Column>
+                <SidebarMenu
+                  currentLocation=""
+                  desktop={true}
+                />
+              </Column>
+              <Column>
+                <ForwardRef>
+                  <img
+                    alt="business logo"
+                    height="44px"
+                    src="logo.png"
+                    width="44px"
+                  />
+                </ForwardRef>
+              </Column>
+            </Row>
+          </Hide>
+          <Hide
+            above="lg"
+            below={null}
+          >
+            <Menu
+              bodyClassName=""
+              burgerBarClassName=""
+              burgerButtonClassName=""
+              className=""
+              crossButtonClassName=""
+              crossClassName=""
+              customBurgerIcon={
+                <IconGenerator
+                  color="#333"
+                  name="Menu"
+                />
+              }
+              disableAutoFocus={false}
+              disableCloseOnEsc={false}
+              htmlClassName=""
+              id=""
+              isOpen={false}
+              itemClassName=""
+              itemListClassName=""
+              menuClassName=""
+              morphShapeClassName=""
+              noOverlay={false}
+              onStateChange={[Function]}
+              outerContainerId=""
+              overlayClassName=""
+              pageWrapId=""
+              styles={
+                Object {
+                  "bmBurgerButton": Object {
+                    "cursor": "pointer",
+                    "display": "inline-block",
+                    "left": "1.5625rem",
+                    "padding": "0.125rem",
+                    "position": "absolute",
+                    "top": "1.25rem",
+                  },
+                  "bmMenuWrap": Object {
+                    "left": 0,
+                  },
+                }
+              }
+              width="90%"
+            >
+              <SidebarMenu
+                currentLocation=""
+              />
+            </Menu>
+            <ForwardRef>
+              <img
+                alt="business logo"
+                height="50px"
+                src="logo.png"
+                width="50px"
+              />
+            </ForwardRef>
+          </Hide>
+        </ForwardRef>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "blacklist": Array [
+            "css",
+            "width",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "fontSize",
+            "color",
+            "bg",
+            "flex",
+            "order",
+            "alignSelf",
+          ],
+          "children": Array [
+            <Hide
+              above={null}
+              below="lg"
+            >
+              <Row>
+                <Column>
+                  <SidebarMenu
+                    currentLocation=""
+                    desktop={true}
+                  />
+                </Column>
+                <Column>
+                  <ForwardRef>
+                    <img
+                      alt="business logo"
+                      height="44px"
+                      src="logo.png"
+                      width="44px"
+                    />
+                  </ForwardRef>
+                </Column>
+              </Row>
+            </Hide>,
+            <Hide
+              above="lg"
+              below={null}
+            >
+              <Menu
+                bodyClassName=""
+                burgerBarClassName=""
+                burgerButtonClassName=""
+                className=""
+                crossButtonClassName=""
+                crossClassName=""
+                customBurgerIcon={
+                  <IconGenerator
+                    color="#333"
+                    name="Menu"
+                  />
+                }
+                disableAutoFocus={false}
+                disableCloseOnEsc={false}
+                htmlClassName=""
+                id=""
+                isOpen={false}
+                itemClassName=""
+                itemListClassName=""
+                menuClassName=""
+                morphShapeClassName=""
+                noOverlay={false}
+                onStateChange={[Function]}
+                outerContainerId=""
+                overlayClassName=""
+                pageWrapId=""
+                styles={
+                  Object {
+                    "bmBurgerButton": Object {
+                      "cursor": "pointer",
+                      "display": "inline-block",
+                      "left": "1.5625rem",
+                      "padding": "0.125rem",
+                      "position": "absolute",
+                      "top": "1.25rem",
+                    },
+                    "bmMenuWrap": Object {
+                      "left": 0,
+                    },
+                  }
+                }
+                width="90%"
+              >
+                <SidebarMenu
+                  currentLocation=""
+                />
+              </Menu>
+              <ForwardRef>
+                <img
+                  alt="business logo"
+                  height="50px"
+                  src="logo.png"
+                  width="50px"
+                />
+              </ForwardRef>
+            </Hide>,
+          ],
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "above": null,
+              "below": "lg",
+              "children": <Row>
+                <Column>
+                  <SidebarMenu
+                    currentLocation=""
+                    desktop={true}
+                  />
+                </Column>
+                <Column>
+                  <ForwardRef>
+                    <img
+                      alt="business logo"
+                      height="44px"
+                      src="logo.png"
+                      width="44px"
+                    />
+                  </ForwardRef>
+                </Column>
+              </Row>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Column>
+                    <SidebarMenu
+                      currentLocation=""
+                      desktop={true}
+                    />
+                  </Column>,
+                  <Column>
+                    <ForwardRef>
+                      <img
+                        alt="business logo"
+                        height="44px"
+                        src="logo.png"
+                        width="44px"
+                      />
+                    </ForwardRef>
+                  </Column>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <SidebarMenu
+                      currentLocation=""
+                      desktop={true}
+                    />,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "currentLocation": "",
+                      "desktop": true,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <ForwardRef>
+                      <img
+                        alt="business logo"
+                        height="44px"
+                        src="logo.png"
+                        width="44px"
+                      />
+                    </ForwardRef>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <img
+                        alt="business logo"
+                        height="44px"
+                        src="logo.png"
+                        width="44px"
+                      />,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "business logo",
+                        "height": "44px",
+                        "src": "logo.png",
+                        "width": "44px",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-VigVT",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  display: inline-flex;
+  width: 50%;
+  font-size: ",
+                          "1.75rem",
+                          ";
+  ",
+                          "
+    @media (min-width: ",
+                          "28.0625rem",
+                          ") {
+      ",
+                          "
+    width: 95%;
+    justify-content: flex-end;
+  ",
+                          ";
+    }
+  ",
+                          ";
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-VigVT",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "above": "lg",
+              "below": null,
+              "children": Array [
+                <Menu
+                  bodyClassName=""
+                  burgerBarClassName=""
+                  burgerButtonClassName=""
+                  className=""
+                  crossButtonClassName=""
+                  crossClassName=""
+                  customBurgerIcon={
+                    <IconGenerator
+                      color="#333"
+                      name="Menu"
+                    />
+                  }
+                  disableAutoFocus={false}
+                  disableCloseOnEsc={false}
+                  htmlClassName=""
+                  id=""
+                  isOpen={false}
+                  itemClassName=""
+                  itemListClassName=""
+                  menuClassName=""
+                  morphShapeClassName=""
+                  noOverlay={false}
+                  onStateChange={[Function]}
+                  outerContainerId=""
+                  overlayClassName=""
+                  pageWrapId=""
+                  styles={
+                    Object {
+                      "bmBurgerButton": Object {
+                        "cursor": "pointer",
+                        "display": "inline-block",
+                        "left": "1.5625rem",
+                        "padding": "0.125rem",
+                        "position": "absolute",
+                        "top": "1.25rem",
+                      },
+                      "bmMenuWrap": Object {
+                        "left": 0,
+                      },
+                    }
+                  }
+                  width="90%"
+                >
+                  <SidebarMenu
+                    currentLocation=""
+                  />
+                </Menu>,
+                <ForwardRef>
+                  <img
+                    alt="business logo"
+                    height="50px"
+                    src="logo.png"
+                    width="50px"
+                  />
+                </ForwardRef>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bodyClassName": "",
+                  "burgerBarClassName": "",
+                  "burgerButtonClassName": "",
+                  "children": <SidebarMenu
+                    currentLocation=""
+                  />,
+                  "className": "",
+                  "crossButtonClassName": "",
+                  "crossClassName": "",
+                  "customBurgerIcon": <IconGenerator
+                    color="#333"
+                    name="Menu"
+                  />,
+                  "disableAutoFocus": false,
+                  "disableCloseOnEsc": false,
+                  "htmlClassName": "",
+                  "id": "",
+                  "isOpen": false,
+                  "itemClassName": "",
+                  "itemListClassName": "",
+                  "menuClassName": "",
+                  "morphShapeClassName": "",
+                  "noOverlay": false,
+                  "onStateChange": [Function],
+                  "outerContainerId": "",
+                  "overlayClassName": "",
+                  "pageWrapId": "",
+                  "styles": Object {
+                    "bmBurgerButton": Object {
+                      "cursor": "pointer",
+                      "display": "inline-block",
+                      "left": "1.5625rem",
+                      "padding": "0.125rem",
+                      "position": "absolute",
+                      "top": "1.25rem",
+                    },
+                    "bmMenuWrap": Object {
+                      "left": 0,
+                    },
+                  },
+                  "width": "90%",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "currentLocation": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <img
+                    alt="business logo"
+                    height="50px"
+                    src="logo.png"
+                    width="50px"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "business logo",
+                    "height": "50px",
+                    "src": "logo.png",
+                    "width": "50px",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-VigVT",
+                    "isStatic": true,
+                    "rules": Array [
+                      "
+  display: inline-flex;
+  width: 50%;
+  font-size: ",
+                      "1.75rem",
+                      ";
+  ",
+                      "
+    @media (min-width: ",
+                      "28.0625rem",
+                      ") {
+      ",
+                      "
+    width: 95%;
+    justify-content: flex-end;
+  ",
+                      ";
+    }
+  ",
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-VigVT",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+              "box-sizing: border-box;",
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              "
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ",
+              "41.875rem",
+              ";
+  padding: 0 ",
+              "0.9375rem",
+              ";
+  ",
+              "
+    @media (min-width: ",
+              "62rem",
+              ") {
+      ",
+              "
+    max-width: ",
+              "61.3125rem",
+              ";
+  ",
+              ";
+    }
+  ",
+              ";
+
+  ",
+              "
+    @media (min-width: ",
+              "73.6875rem",
+              ") {
+      ",
+              "
+    max-width: ",
+              "79.9375rem",
+              ";
+  ",
+              ";
+    }
+  ",
+              ";
+",
+            ],
+          },
+          "defaultProps": Object {
+            "blacklist": Array [
+              "css",
+              "width",
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "fontSize",
+              "color",
+              "bg",
+              "flex",
+              "order",
+              "alignSelf",
+            ],
+          },
+          "displayName": "Container",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "propTypes": Object {
+            "alignSelf": [Function],
+            "bg": [Function],
+            "color": [Function],
+            "flex": [Function],
+            "fontSize": [Function],
+            "m": [Function],
+            "mb": [Function],
+            "ml": [Function],
+            "mr": [Function],
+            "mt": [Function],
+            "mx": [Function],
+            "my": [Function],
+            "order": [Function],
+            "p": [Function],
+            "pb": [Function],
+            "pl": [Function],
+            "pr": [Function],
+            "pt": [Function],
+            "px": [Function],
+            "py": [Function],
+            "width": [Function],
+          },
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "systemComponent": true,
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gZMcBi",
+          "isStatic": true,
+          "rules": Array [
+            "
+  height: ",
+            "3.625rem",
+            ";
+  padding-top: ",
+            "0.625rem",
+            ";
+  background: ",
+            "#34b896",
+            ";
+  text-align: center;
+  ",
+            "
+    @media (min-width: ",
+            "62rem",
+            ") {
+      ",
+            "
+    text-align: center;
+  ",
+            ";
+    }
+  ",
+            ";
+  ",
+            "
+    @media (min-width: ",
+            "73.6875rem",
+            ") {
+      ",
+            "
+    height: 10vh;
+    padding-top: ",
+            "0.375rem",
+            ";
+  ",
+            ";
+    }
+  ",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.header",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-gZMcBi",
+        "target": "header",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
 `;

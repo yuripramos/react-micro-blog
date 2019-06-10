@@ -22,6 +22,7 @@ class ArticleDetail extends Component {
         type: "author",
         range: 5
       },
+      isFilled: false,
       articlesDisplayed: []
     };
     this.onFilter = this.onFilter.bind(this);
@@ -43,17 +44,17 @@ class ArticleDetail extends Component {
   componentDidMount() {
     const { authorsList, articlesList } = this.props;
 
-    const isFilled = authorsList && authorsList.length > 0;
+    const isFilled = articlesList && authorsList && authorsList.length > 0;
     isFilled &&
       this.setState({
-        articlesDisplayed: articlesList
+        articlesDisplayed: articlesList,
+        isFilled: true
       });
   }
 
   render() {
     const { authorsList } = this.props;
-    const { filter, articlesDisplayed } = this.state;
-    const isFilled = authorsList && authorsList.length > 0;
+    const { filter, articlesDisplayed, isFilled } = this.state;
     return (
       <Wrapper large>
         <ContentFilters

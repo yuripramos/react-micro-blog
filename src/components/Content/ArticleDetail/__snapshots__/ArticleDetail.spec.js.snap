@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleDetail
+    articlesList={
+      Array [
+        Object {
+          "body": "We will mesh the buzzword. Our feature set is unparallele",
+          "metadata": Object {
+            "authorId": 2,
+            "publishedAt": 1492004832000,
+          },
+          "title": "AssCo has revamped the theory of versioning",
+        },
+        Object {
+          "body": "she is no take arms and to take arms.",
+          "metadata": Object {
+            "authorId": 1,
+            "publishedAt": 1431006432000,
+          },
+          "title": "Matleh",
+        },
+      ]
+    }
+    authorsList={
+      Array [
+        Object {
+          "id": 1,
+          "name": "Jemma Chadwick",
+        },
+        Object {
+          "id": 2,
+          "name": "Nicholas Jordan",
+        },
+      ]
+    }
+    getArticles={[MockFunction]}
+    getAuthors={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ContentFilters
+          authorsList={
+            Array [
+              Object {
+                "id": 1,
+                "name": "Jemma Chadwick",
+              },
+              Object {
+                "id": 2,
+                "name": "Nicholas Jordan",
+              },
+            ]
+          }
+          defaultFilter={
+            Object {
+              "range": 5,
+              "type": "author",
+            }
+          }
+          onFilter={[Function]}
+        />,
+        <span>
+          No content to display, please try again
+        </span>,
+      ],
+      "large": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "authorsList": Array [
+            Object {
+              "id": 1,
+              "name": "Jemma Chadwick",
+            },
+            Object {
+              "id": 2,
+              "name": "Nicholas Jordan",
+            },
+          ],
+          "defaultFilter": Object {
+            "range": 5,
+            "type": "author",
+          },
+          "onFilter": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "No content to display, please try again",
+        },
+        "ref": null,
+        "rendered": "No content to display, please try again",
+        "type": "span",
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-kEYyzF",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  height: ",
+          "2.5rem",
+          ";
+  transition: all 0.2s linear;
+  ",
+          "
+    @media (min-width: ",
+          "62rem",
+          ") {
+      ",
+          "
+    padding: 0 ",
+          "3.75rem",
+          ";
+  ",
+          ";
+    }
+  ",
+          ";
+  ",
+          "
+    @media (min-width: ",
+          "73.6875rem",
+          ") {
+      ",
+          "
+    text-align: left;
+  ",
+          ";
+    }
+  ",
+          ";
+  ",
+          [Function],
+          ";
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-kEYyzF",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ContentFilters
+            authorsList={
+              Array [
+                Object {
+                  "id": 1,
+                  "name": "Jemma Chadwick",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Nicholas Jordan",
+                },
+              ]
+            }
+            defaultFilter={
+              Object {
+                "range": 5,
+                "type": "author",
+              }
+            }
+            onFilter={[Function]}
+          />,
+          <span>
+            No content to display, please try again
+          </span>,
+        ],
+        "large": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "authorsList": Array [
+              Object {
+                "id": 1,
+                "name": "Jemma Chadwick",
+              },
+              Object {
+                "id": 2,
+                "name": "Nicholas Jordan",
+              },
+            ],
+            "defaultFilter": Object {
+              "range": 5,
+              "type": "author",
+            },
+            "onFilter": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No content to display, please try again",
+          },
+          "ref": null,
+          "rendered": "No content to display, please try again",
+          "type": "span",
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-kEYyzF",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  height: ",
+            "2.5rem",
+            ";
+  transition: all 0.2s linear;
+  ",
+            "
+    @media (min-width: ",
+            "62rem",
+            ") {
+      ",
+            "
+    padding: 0 ",
+            "3.75rem",
+            ";
+  ",
+            ";
+    }
+  ",
+            ";
+  ",
+            "
+    @media (min-width: ",
+            "73.6875rem",
+            ") {
+      ",
+            "
+    text-align: left;
+  ",
+            ";
+    }
+  ",
+            ";
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-kEYyzF",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;

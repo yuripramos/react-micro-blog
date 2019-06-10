@@ -62,6 +62,7 @@
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "shortid": "^2.2.14",
+    "sinon": "^7.3.2",
     "style-loader": "0.23.1",
     "styled-components": "^4.2.0",
     "terser-webpack-plugin": "1.2.2",
@@ -116,18 +117,6 @@
       "^react-native$": "react-native-web",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
     },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "web.ts",
-      "ts",
-      "web.tsx",
-      "tsx",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node"
-    ],
     "watchPlugins": [
       "C:\\projects\\react-transactions-manager\\node_modules\\jest-watch-typeahead\\filename.js",
       "C:\\projects\\react-transactions-manager\\node_modules\\jest-watch-typeahead\\testname.js"

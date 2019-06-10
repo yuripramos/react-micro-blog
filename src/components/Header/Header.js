@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { shape, func, array } from "prop-types";
+import { shape, func } from "prop-types";
 import { Container, Row, Column } from "../../styles/grid";
 import SidebarMenu from "../common/SidebarMenu";
 import Logo from "../../assets/images/logo.png";
@@ -117,9 +117,5 @@ export default Header;
 Header.propTypes = {
   history: shape({
     push: func
-  }),
-  authorsList: array,
-  articlesList: array,
-  getAuthors: func,
-  getArticles: func
+  })
 };

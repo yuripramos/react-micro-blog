@@ -28,16 +28,10 @@ class SidebarMenu extends Component {
       return (
         <ListMenuItems>
           <Item
-            onClick={() => redirect("/lastarticles")}
-            active={this.isActive("/lastarticles")}
+            onClick={() => redirect("/news")}
+            active={this.isActive("/news")}
           >
-            <Span>LAST ARTICLES</Span>
-          </Item>
-          <Item
-            onClick={() => redirect("/authors")}
-            active={this.isActive("/authors")}
-          >
-            <Span>AUTHORS</Span>
+            <Span>NEWS</Span>
           </Item>
           <Item
             onClick={() => redirect("/vision")}
