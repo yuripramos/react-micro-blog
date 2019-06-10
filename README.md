@@ -59,7 +59,7 @@ More about Redux-zero [here](https://medium.com/@matheusml/introducing-redux-zer
 
 **The Unit tests was made focusing in API responses and changing state expected behaviors**
 
-##Features
+## Features
 
 1. Publications - At the root of the page you can see all the articles at the first moment.
 2. Summary - There's a sidebar at the left of the page that displays the title of each publication.
