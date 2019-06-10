@@ -204,18 +204,4 @@ describe("Input component", () => {
       expect(props.onKeyDown).not.toHaveBeenCalled();
     });
   });
-  describe("inside components", () => {
-    it("tooltip", () => {
-      const props = {
-        onChange: () => {},
-        type: "submit",
-        name: "input",
-        placeholder: "My input",
-        valid: null,
-        toolTip: jest.fn()
-      };
-      const wrapper = shallow(<Input {...props} />);
-      expect(wrapper.find(Tooltip).length).toBe(1);
-    });
-  });
 });

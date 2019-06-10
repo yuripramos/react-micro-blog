@@ -52,18 +52,11 @@ class SidebarMenu extends Component {
         <MenuList>
           <Divisor />
           <ListItem
-            onClick={() => redirect("/lastarticles")}
-            active={this.isActive("/lastarticles")}
+            onClick={() => redirect("/news")}
+            active={this.isActive("/news")}
           >
             <LeftBorder />
-            LAST ARTICLES
-          </ListItem>
-          <ListItem
-            onClick={() => redirect("/authors")}
-            active={this.isActive("/authors")}
-          >
-            <LeftBorder />
-            AUTHORS
+            NEWS
           </ListItem>
           <ListItem
             onClick={() => redirect("/vision")}
