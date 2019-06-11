@@ -17,7 +17,26 @@ beforeEach(() => {
 
 describe("Header component", () => {
   it("should match snapshot with props", () => {
-    expect(shallow(<Header {...props}/>)).toMatchSnapshot();
+    expect(shallow(<Header {...props} />)).toMatchSnapshot();
   });
 
+  describe("onToggleMenu", () => {
+    it("should update the state", () => {
+      const instance = shallow(<Header {...props} />).instance();
+
+      instance.onToggleMenu({ isOpen: true });
+
+      expect(instance.state.menuOpen).toBe(true);
+    });
+  });
+
+  describe("closeMenu", () => {
+    it("should update the state", () => {
+      const instance = shallow(<Header {...props} />).instance();
+
+      instance.closeMenu();
+
+      expect(instance.state.menuOpen).toBe(false);
+    });
+  });
 });

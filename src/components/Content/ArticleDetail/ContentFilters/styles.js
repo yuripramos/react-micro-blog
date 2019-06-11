@@ -22,6 +22,6 @@ export const FormItem = styled.div`
     min-width: auto;
     flex-grow: 1;
     max-width: 52%;
-    margin: 0;
+    margin: ${rem(10)} 0 0 0;
   `)};
 `;

@@ -103,6 +103,7 @@ exports[`Header component should match snapshot with props 1`] = `
         width="90%"
       >
         <SidebarMenu
+          closeMenu={[Function]}
           currentLocation=""
         />
       </Menu>

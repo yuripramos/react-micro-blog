@@ -77,8 +77,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node --max_old_space_size=4096 scripts/build.js",
-    "test": "node --max_old_space_size=4096 scripts/test.js",
-    "test:coverage": "node --max_old_space_size=4096 scripts/test.js --coverage --watchAll=false",
+    "test": "jest --no-cache",
+    "test:coverage": " jest --coverage --runInBand",
     "installation": "npm install"
   },
   "eslintConfig": {
@@ -113,7 +113,7 @@
       "!src/components/**/styles.js",
       "!src/components/**/index.js",
       "!src/client/**/*.js",
-      "!src/common/Icon/*.js",
+      "!src/components/common/Icon/*.js",
       "!src/server/**/*.js",
       "!src/utils/*.js",
       "!src/styles/**/*.js",
@@ -125,10 +125,10 @@
     "setupTestFrameworkScriptFile": "<rootDir>/setupEnzyme.js",
     "coverageThreshold": {
       "global": {
-        "branches": 70,
-        "functions": 70,
-        "lines": 70,
-        "statements": 70
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
       }
     }
   },

@@ -11,7 +11,7 @@ import { Label } from "../../common/Input/styles";
 
 export const DropdownField = styled.select`
   width: 100%;
-  height: ${rem(48)};
+  height: ${rem(30)};
   border-radius: ${rem(4)};
   background-color: ${white};
   border: solid ${rem(1)} ${grey30};
@@ -19,7 +19,7 @@ export const DropdownField = styled.select`
   font-size: ${rem(13)};
   letter-spacing: ${rem(0.8)};
   color: ${black50};
-  padding: ${rem(15)} ${rem(15)} 0 ${rem(6.4)};
+  padding: ${rem(5)} ${rem(15)} 0 ${rem(6.4)};
   transition: 0.3s padding, 0.3s border;
   box-shadow: none;
 

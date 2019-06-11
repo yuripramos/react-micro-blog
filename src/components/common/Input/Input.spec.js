@@ -2,7 +2,6 @@ import React from "react";
 import { shallow } from "enzyme";
 
 import Input from "./Input";
-import { InputField } from "./styles";
 
 describe("Input component", () => {
   it("should match snapshot", () => {

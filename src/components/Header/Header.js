@@ -100,7 +100,10 @@ class Header extends Component {
               width="90%"
               styles={menuOpen === true ? bmStylesOpened : bmStylesClosed}
             >
-              <SidebarMenu currentLocation={history.location.pathname} />
+              <SidebarMenu
+                closeMenu={this.closeMenu}
+                currentLocation={history.location.pathname}
+              />
             </Menu>
             <TitleWrapper>
               <img src={Logo} alt="business logo" width="50px" height="50px" />

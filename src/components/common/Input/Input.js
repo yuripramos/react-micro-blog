@@ -1,22 +1,7 @@
 import React, { Component } from "react";
 import { string, func, bool, array, number, oneOfType } from "prop-types";
-import DayPickerInput from "react-day-picker/DayPickerInput";
-import "react-day-picker/lib/style.css";
-/* eslint-disable */
 
-import {
-  InputWrapper,
-  InputField,
-  Label,
-  IconContainer,
-  ValidityContainer,
-  Tooltip,
-  Prefix,
-  WrapperDayPicker,
-  InputDayPicker
-} from "./styles";
-import Icon from "../Icon";
-
+import { InputWrapper, InputField, Label, Prefix } from "./styles";
 
 class Input extends Component {
   constructor(props) {
@@ -25,11 +10,8 @@ class Input extends Component {
       isFocused: false,
       emptyState: false,
       isValid: typeof props.valid === "boolean" ? props.valid : null,
-      selectedDay: undefined,
       isDisabled: false
     };
-    this.handleDayChange = this.handleDayChange.bind(this);
-    this.clearDayPicker = this.clearDayPicker.bind(this);
   }
 
   componentDidUpdate(prevProps) {
@@ -51,31 +33,6 @@ class Input extends Component {
     }
   }
 
-  handleDayChange(selectedDay, modifiers, dayPickerInput) {
-    const input = dayPickerInput.getInput();
-    this.setState({
-      selectedDay,
-      isEmpty: !input.value.trim(),
-      isDisabled: modifiers.disabled === true
-    });
-
-    const syntheticEvent = {
-      target: {
-        name: this.props.name,
-        value: selectedDay
-      }
-    };
-    this.props.onChange(syntheticEvent);
-
-  }
-  clearDayPicker(){
-    if(this.state.selectedDay !== undefined){
-      this.setState({
-        selectedDay: undefined
-      });
-    }
-  }
-
   render() {
     const {
       label,
@@ -83,62 +40,29 @@ class Input extends Component {
       placeholder,
       onChange,
       onBlur,
-      onFocus,
-      onKeyUp,
       type,
       name,
-      icon,
       valid,
       tinyLabels,
-      toolTip,
-      dataTest,
       width,
-      maskType,
-      refType,
+      onFocus,
       prefix,
-      maxLength,
       ...props
     } = this.props;
-    const {
-      isFocused,
-      emptyState,
-      isValid,
-      selectedDay
-    } = this.state;
-    if(value === "" && type === "date"){
-      this.clearDayPicker();
-    }
-    if (type === "date") {
-      return (
-        <WrapperDayPicker>
-          <DayPickerInput
-            value={selectedDay}
-            onDayChange={this.handleDayChange}
-            dayPickerProps={{
-              selectedDays: selectedDay,
-              disabledDays: {
-                daysOfWeek: [0, 6]
-              }
-            }}
-          />
-        </WrapperDayPicker>
-      );
-    }
+    const { isFocused, emptyState, isValid } = this.state;
     return (
       <InputWrapper valid={emptyState ? false : isValid} width={width}>
         {prefix && (value || isFocused) && <Prefix>{prefix}</Prefix>}
         <InputField
           {...props}
           required
-          maxLength={maxLength}
           onChange={e => {
             onChange && onChange(e);
             this.setState({ emptyState: e.target.value === "" });
           }}
-          innerRef={this.props.innerRef}
           onFocus={e => {
             onFocus && onFocus(e);
-            (prefix || toolTip) && this.setState({ isFocused: true });
+            prefix && this.setState({ isFocused: true });
           }}
           onBlur={e => {
             onBlur && onBlur(e);
@@ -152,9 +76,7 @@ class Input extends Component {
           value={value}
           name={name}
           onKeyDown={this.onKeyDown}
-          autoComplete="new-password"
           placeholder={placeholder}
-          data-test={dataTest ? dataTest : Input.displayName}
           isEmpty={!value}
           tinyLabels={tinyLabels}
         />
@@ -171,10 +93,8 @@ Input.defaultProps = {
   type: "text",
   name: "",
   label: null,
-  icon: null,
   valid: () => {},
   onFocus: null,
-  tinyLabels: null,
   onBlur: () => {},
   value: "",
   disableKeys: []
@@ -192,7 +112,9 @@ Input.propTypes = {
   onBlur: func,
   onFocus: func,
   disableKeys: oneOfType([number, string, array]),
-  onChange: func
+  onChange: func,
+  width: string,
+  prefix: string
 };
 
 export default Input;

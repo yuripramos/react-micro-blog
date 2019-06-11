@@ -8,7 +8,7 @@ import {
   LeftBorder,
   ListItem
 } from "./styles";
-import { string, bool } from "prop-types";
+import { string, bool, func } from "prop-types";
 import { redirect } from "../../../utils/redirect";
 
 class SidebarMenu extends Component {
@@ -20,6 +20,12 @@ class SidebarMenu extends Component {
   isActive(path) {
     const { currentLocation } = this.props;
     return currentLocation.includes(path);
+  }
+
+  redirectTo(path) {
+    const { closeMenu } = this.props;
+    closeMenu();
+    redirect(path);
   }
 
   render() {
@@ -82,5 +88,6 @@ export default SidebarMenu;
 
 SidebarMenu.propTypes = {
   currentLocation: string,
-  desktop: bool
+  desktop: bool,
+  closeMenu: func
 };

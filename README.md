@@ -57,7 +57,7 @@ More about Redux-zero [here](https://medium.com/@matheusml/introducing-redux-zer
 
 ## Unit Tests
 
-`npm run test:coverage` **Coverage Threshold > 70%**. Currently = 70%.
+`npm run test:coverage` **Coverage Threshold > 60%**. Currently ~= 70%.
 
 **The Unit tests was made focusing in API responses and changing state expected behaviors**
 
