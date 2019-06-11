@@ -22,6 +22,7 @@
     "dotenv": "^8.0.0",
     "dotenv-expand": "^5.1.0",
     "enzyme": "^3.10.0",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "5.12.0",
     "eslint-config-react-app": "^3.0.8",
     "eslint-loader": "2.1.1",
@@ -38,6 +39,7 @@
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.6.0",
+    "jest-localstorage-mock": "^2.4.0",
     "jest-pnp-resolver": "1.0.2",
     "jest-resolve": "23.6.0",
     "jest-watch-typeahead": "^0.2.1",
@@ -76,7 +78,7 @@
     "start": "node scripts/start.js",
     "build": "node --max_old_space_size=4096 scripts/build.js",
     "test": "node --max_old_space_size=4096 scripts/test.js",
-    "coverage": "node scripts/test.js --coverage",
+    "test:coverage": "node --max_old_space_size=4096 scripts/test.js --coverage --watchAll=false",
     "installation": "npm install"
   },
   "eslintConfig": {
@@ -89,39 +91,46 @@
     "not op_mini all"
   ],
   "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/config/__mocks__/styleMock.js"
+    },
+    "setupFiles": [
+      "<rootDir>/config/__mocks__/setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts",
-      "src/services/**/*.js"
+      "src/**/*.js",
+      "!scripts/*.js",
+      "!src/index.js",
+      "!src/components/**/styles.js",
+      "!src/components/**/index.js",
+      "!src/client/**/*.js",
+      "!src/common/Icon/*.js",
+      "!src/server/**/*.js",
+      "!src/utils/*.js",
+      "!src/styles/**/*.js",
+      "!src/components/Routes/Routes.js"
+    ],
+    "reporters": [
+      "default"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/setupEnzyme.js",
-    "resolver": "jest-pnp-resolver",
-    "setupFiles": [
-      "react-app-polyfill/jsdom"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
-    ],
-    "testEnvironment": "jsdom",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
-      "^.+\\.module\\.(css|sass|scss)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
-    },
-    "watchPlugins": [
-      "C:\\projects\\react-transactions-manager\\node_modules\\jest-watch-typeahead\\filename.js",
-      "C:\\projects\\react-transactions-manager\\node_modules\\jest-watch-typeahead\\testname.js"
-    ]
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
   },
   "babel": {
     "presets": [
