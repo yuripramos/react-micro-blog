@@ -27,14 +27,7 @@ ShallowWrapper {
           onClick={[Function]}
         >
           <ForwardRef />
-          LAST ARTICLES
-        </ForwardRef>,
-        <ForwardRef
-          active={false}
-          onClick={[Function]}
-        >
-          <ForwardRef />
-          AUTHORS
+          NEWS
         </ForwardRef>,
         <ForwardRef
           active={false}
@@ -103,7 +96,7 @@ ShallowWrapper {
           "active": false,
           "children": Array [
             <ForwardRef />,
-            "LAST ARTICLES",
+            "NEWS",
           ],
           "onClick": [Function],
         },
@@ -149,117 +142,7 @@ ShallowWrapper {
               "withComponent": [Function],
             },
           },
-          "LAST ARTICLES",
-        ],
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "rules": Array [
-              "
-  cursor: pointer;
-  position: relative;
-  height: ",
-              "3.125rem",
-              ";
-  font-family: Roboto;
-  font-size: ",
-              "0.9375rem",
-              ";
-  color: ",
-              "#06366f",
-              ";
-  list-style: none;
-  letter-spacing: ",
-              "0.125rem",
-              ";
-  padding-top: ",
-              "0.3125rem",
-              ";
-  margin: 0 ",
-              "0.3125rem",
-              " ",
-              "0.3125rem",
-              " 0;
-  text-align: left;
-
-  ",
-              [Function],
-              ";
-
-  :hover {
-    opacity: 0.7;
-  }
-",
-            ],
-          },
-          "displayName": "styled.li",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "li",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        },
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "active": false,
-          "children": Array [
-            <ForwardRef />,
-            "AUTHORS",
-          ],
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bxivhb",
-                "isStatic": true,
-                "rules": Array [
-                  "
-  width: ",
-                  "0.4375rem",
-                  ";
-  height: 100%;
-  background-color: ",
-                  "#06366f",
-                  ";
-  position: absolute;
-  top: 0;
-  left: -",
-                  "2.5rem",
-                  ";
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bxivhb",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            },
-          },
-          "AUTHORS",
+          "NEWS",
         ],
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -574,14 +457,7 @@ ShallowWrapper {
             onClick={[Function]}
           >
             <ForwardRef />
-            LAST ARTICLES
-          </ForwardRef>,
-          <ForwardRef
-            active={false}
-            onClick={[Function]}
-          >
-            <ForwardRef />
-            AUTHORS
+            NEWS
           </ForwardRef>,
           <ForwardRef
             active={false}
@@ -650,7 +526,7 @@ ShallowWrapper {
             "active": false,
             "children": Array [
               <ForwardRef />,
-              "LAST ARTICLES",
+              "NEWS",
             ],
             "onClick": [Function],
           },
@@ -696,117 +572,7 @@ ShallowWrapper {
                 "withComponent": [Function],
               },
             },
-            "LAST ARTICLES",
-          ],
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-htpNat",
-              "isStatic": false,
-              "rules": Array [
-                "
-  cursor: pointer;
-  position: relative;
-  height: ",
-                "3.125rem",
-                ";
-  font-family: Roboto;
-  font-size: ",
-                "0.9375rem",
-                ";
-  color: ",
-                "#06366f",
-                ";
-  list-style: none;
-  letter-spacing: ",
-                "0.125rem",
-                ";
-  padding-top: ",
-                "0.3125rem",
-                ";
-  margin: 0 ",
-                "0.3125rem",
-                " ",
-                "0.3125rem",
-                " 0;
-  text-align: left;
-
-  ",
-                [Function],
-                ";
-
-  :hover {
-    opacity: 0.7;
-  }
-",
-              ],
-            },
-            "displayName": "styled.li",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-htpNat",
-            "target": "li",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "active": false,
-            "children": Array [
-              <ForwardRef />,
-              "AUTHORS",
-            ],
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bxivhb",
-                  "isStatic": true,
-                  "rules": Array [
-                    "
-  width: ",
-                    "0.4375rem",
-                    ";
-  height: 100%;
-  background-color: ",
-                    "#06366f",
-                    ";
-  position: absolute;
-  top: 0;
-  left: -",
-                    "2.5rem",
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bxivhb",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              },
-            },
-            "AUTHORS",
+            "NEWS",
           ],
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),

@@ -29,12 +29,7 @@ ShallowWrapper {
             <Route
               component={[Function]}
               exact={true}
-              path="/lastarticles"
-            />
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/authors"
+              path="/news"
             />
             <Route
               component={[Function]}
@@ -69,12 +64,7 @@ ShallowWrapper {
             <Route
               component={[Function]}
               exact={true}
-              path="/lastarticles"
-            />
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/authors"
+              path="/news"
             />
             <Route
               component={[Function]}
@@ -107,12 +97,7 @@ ShallowWrapper {
             <Route
               component={[Function]}
               exact={true}
-              path="/lastarticles"
-            />
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/authors"
+              path="/news"
             />
             <Route
               component={[Function]}
@@ -144,12 +129,7 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 exact={true}
-                path="/lastarticles"
-              />,
-              <Route
-                component={[Function]}
-                exact={true}
-                path="/authors"
+                path="/news"
               />,
               <Route
                 component={[Function]}
@@ -188,20 +168,7 @@ ShallowWrapper {
               "props": Object {
                 "component": [Function],
                 "exact": true,
-                "path": "/lastarticles",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "component": [Function],
-                "exact": true,
-                "path": "/authors",
+                "path": "/news",
               },
               "ref": null,
               "rendered": null,
@@ -270,12 +237,7 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 exact={true}
-                path="/lastarticles"
-              />
-              <Route
-                component={[Function]}
-                exact={true}
-                path="/authors"
+                path="/news"
               />
               <Route
                 component={[Function]}
@@ -310,12 +272,7 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 exact={true}
-                path="/lastarticles"
-              />
-              <Route
-                component={[Function]}
-                exact={true}
-                path="/authors"
+                path="/news"
               />
               <Route
                 component={[Function]}
@@ -348,12 +305,7 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 exact={true}
-                path="/lastarticles"
-              />
-              <Route
-                component={[Function]}
-                exact={true}
-                path="/authors"
+                path="/news"
               />
               <Route
                 component={[Function]}
@@ -385,12 +337,7 @@ ShallowWrapper {
                 <Route
                   component={[Function]}
                   exact={true}
-                  path="/lastarticles"
-                />,
-                <Route
-                  component={[Function]}
-                  exact={true}
-                  path="/authors"
+                  path="/news"
                 />,
                 <Route
                   component={[Function]}
@@ -429,20 +376,7 @@ ShallowWrapper {
                 "props": Object {
                   "component": [Function],
                   "exact": true,
-                  "path": "/lastarticles",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "component": [Function],
-                  "exact": true,
-                  "path": "/authors",
+                  "path": "/news",
                 },
                 "ref": null,
                 "rendered": null,

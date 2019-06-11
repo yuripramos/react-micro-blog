@@ -1,285 +1,2693 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component should match snapshot 1`] = `
-<styled.div
-  valid={null}
->
-  <styled.input
-    autoComplete="new-password"
-    data-test="Input"
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Input
     disableKeys={Array []}
-    disabled={false}
-    isEmpty={true}
+    icon={null}
+    label={null}
     name="input"
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
+    onFocus={null}
     placeholder="My input"
-    required={true}
     tinyLabels={null}
     type="submit"
+    valid={[Function]}
     value=""
-  />
-</styled.div>
-`;
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <ForwardRef
+          autoComplete="new-password"
+          data-test="Input"
+          disableKeys={Array []}
+          isEmpty={true}
+          name="input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="My input"
+          required={true}
+          tinyLabels={null}
+          type="submit"
+          value=""
+        />,
+        null,
+      ],
+      "valid": null,
+      "width": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "autoComplete": "new-password",
+          "data-test": "Input",
+          "disableKeys": Array [],
+          "innerRef": undefined,
+          "isEmpty": true,
+          "maxLength": undefined,
+          "name": "input",
+          "onBlur": [Function],
+          "onChange": [Function],
+          "onFocus": [Function],
+          "onKeyDown": undefined,
+          "placeholder": "My input",
+          "prefix": undefined,
+          "required": true,
+          "tinyLabels": null,
+          "type": "submit",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "rules": Array [
+              "
+  width: 100%;
+  height: ",
+              "2.875rem",
+              ";
+  border-radius: ",
+              "0.25rem",
+              ";
+  background-color: ",
+              "#FFF",
+              ";
+  border: solid ",
+              "0.0625rem",
+              " ",
+              "#696969",
+              ";
+  font-size: ",
+              "0.8125rem",
+              ";
+  letter-spacing: ",
+              "0.00625rem",
+              ";
+  color: ",
+              "#5b6b75",
+              ";
+  padding: 0 ",
+              "3.25rem",
+              ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
 
-exports[`Input component should match snapshot with currency mask 1`] = `
-<styled.div
-  valid={null}
->
-  <t
-    guide={false}
-    mask={false}
-    onChange={[Function]}
-    render={[Function]}
-  />
-</styled.div>
-`;
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+              [Function],
+              ";
 
-exports[`Input component should match snapshot with datetime mask 1`] = `
-<styled.div
-  valid={null}
->
-  <t
-    guide={false}
-    mask={
-      Array [
-        /\\\\d/,
-        /\\\\d/,
-        "/",
-        /\\\\d/,
-        /\\\\d/,
-        "/",
-        /\\\\d/,
-        /\\\\d/,
-        /\\\\d/,
-        /\\\\d/,
-      ]
-    }
-    onChange={[Function]}
-    render={[Function]}
-  />
-</styled.div>
-`;
+  :focus {
+    outline: none;
+    border: solid ",
+              "0.0625rem",
+              " ",
+              "#4a90e2",
+              ";
+  }
 
-exports[`Input component should match snapshot with datetime mask 2`] = `
-<styled.div
-  valid={null}
->
-  <t
-    guide={false}
-    mask={
-      Array [
-        /\\\\d/,
-        /\\\\d/,
-        /\\\\d/,
-        ".",
-        /\\\\d/,
-        /\\\\d/,
-        /\\\\d/,
-        ".",
-        /\\\\d/,
-        /\\\\d/,
-        /\\\\d/,
-        "-",
-        /\\\\d/,
-        /\\\\d/,
-        /\\\\d/,
-      ]
-    }
-    onChange={[Function]}
-    render={[Function]}
-  />
-</styled.div>
+  ",
+              [Function],
+              ";
+
+  :focus {
+    ",
+              [Function],
+              ";
+  }
+  ",
+              [Function],
+              ";
+  ",
+              [Function],
+              ";
+  :not(:focus) {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.input",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      null,
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+          "2.375rem",
+          ";
+  margin-right: ",
+          "1.5625rem",
+          ";
+  input:not(:focus) {
+    ",
+          [Function],
+          ";
+  }
+  ",
+          [Function],
+          ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <ForwardRef
+            autoComplete="new-password"
+            data-test="Input"
+            disableKeys={Array []}
+            isEmpty={true}
+            name="input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="My input"
+            required={true}
+            tinyLabels={null}
+            type="submit"
+            value=""
+          />,
+          null,
+        ],
+        "valid": null,
+        "width": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "autoComplete": "new-password",
+            "data-test": "Input",
+            "disableKeys": Array [],
+            "innerRef": undefined,
+            "isEmpty": true,
+            "maxLength": undefined,
+            "name": "input",
+            "onBlur": [Function],
+            "onChange": [Function],
+            "onFocus": [Function],
+            "onKeyDown": undefined,
+            "placeholder": "My input",
+            "prefix": undefined,
+            "required": true,
+            "tinyLabels": null,
+            "type": "submit",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": false,
+              "rules": Array [
+                "
+  width: 100%;
+  height: ",
+                "2.875rem",
+                ";
+  border-radius: ",
+                "0.25rem",
+                ";
+  background-color: ",
+                "#FFF",
+                ";
+  border: solid ",
+                "0.0625rem",
+                " ",
+                "#696969",
+                ";
+  font-size: ",
+                "0.8125rem",
+                ";
+  letter-spacing: ",
+                "0.00625rem",
+                ";
+  color: ",
+                "#5b6b75",
+                ";
+  padding: 0 ",
+                "3.25rem",
+                ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+                [Function],
+                ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+                "0.0625rem",
+                " ",
+                "#4a90e2",
+                ";
+  }
+
+  ",
+                [Function],
+                ";
+
+  :focus {
+    ",
+                [Function],
+                ";
+  }
+  ",
+                [Function],
+                ";
+  ",
+                [Function],
+                ";
+  :not(:focus) {
+    ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.input",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "input",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        null,
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+            "2.375rem",
+            ";
+  margin-right: ",
+            "1.5625rem",
+            ";
+  input:not(:focus) {
+    ",
+            [Function],
+            ";
+  }
+  ",
+            [Function],
+            ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
 `;
 
 exports[`Input component should match snapshot with error validation 1`] = `
-<styled.div
-  valid={false}
->
-  <styled.input
-    autoComplete="new-password"
-    data-test="Input"
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Input
     disableKeys={Array []}
-    disabled={false}
-    isEmpty={true}
+    icon={null}
+    label={null}
     name="input"
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
+    onFocus={null}
     placeholder="My input"
-    required={true}
     tinyLabels={null}
     type="submit"
+    valid={false}
     value=""
-  />
-  <styled.div>
-    <Icon
-      color={null}
-      cursor={false}
-      fixCrossAxisAlign={null}
-      height="24"
-      type="Attention"
-      width="24"
-    />
-  </styled.div>
-</styled.div>
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <ForwardRef
+          autoComplete="new-password"
+          data-test="Input"
+          disableKeys={Array []}
+          isEmpty={true}
+          name="input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="My input"
+          required={true}
+          tinyLabels={null}
+          type="submit"
+          value=""
+        />,
+        null,
+      ],
+      "valid": false,
+      "width": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "autoComplete": "new-password",
+          "data-test": "Input",
+          "disableKeys": Array [],
+          "innerRef": undefined,
+          "isEmpty": true,
+          "maxLength": undefined,
+          "name": "input",
+          "onBlur": [Function],
+          "onChange": [Function],
+          "onFocus": [Function],
+          "onKeyDown": undefined,
+          "placeholder": "My input",
+          "prefix": undefined,
+          "required": true,
+          "tinyLabels": null,
+          "type": "submit",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "rules": Array [
+              "
+  width: 100%;
+  height: ",
+              "2.875rem",
+              ";
+  border-radius: ",
+              "0.25rem",
+              ";
+  background-color: ",
+              "#FFF",
+              ";
+  border: solid ",
+              "0.0625rem",
+              " ",
+              "#696969",
+              ";
+  font-size: ",
+              "0.8125rem",
+              ";
+  letter-spacing: ",
+              "0.00625rem",
+              ";
+  color: ",
+              "#5b6b75",
+              ";
+  padding: 0 ",
+              "3.25rem",
+              ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+              [Function],
+              ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+              "0.0625rem",
+              " ",
+              "#4a90e2",
+              ";
+  }
+
+  ",
+              [Function],
+              ";
+
+  :focus {
+    ",
+              [Function],
+              ";
+  }
+  ",
+              [Function],
+              ";
+  ",
+              [Function],
+              ";
+  :not(:focus) {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.input",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      null,
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+          "2.375rem",
+          ";
+  margin-right: ",
+          "1.5625rem",
+          ";
+  input:not(:focus) {
+    ",
+          [Function],
+          ";
+  }
+  ",
+          [Function],
+          ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <ForwardRef
+            autoComplete="new-password"
+            data-test="Input"
+            disableKeys={Array []}
+            isEmpty={true}
+            name="input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="My input"
+            required={true}
+            tinyLabels={null}
+            type="submit"
+            value=""
+          />,
+          null,
+        ],
+        "valid": false,
+        "width": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "autoComplete": "new-password",
+            "data-test": "Input",
+            "disableKeys": Array [],
+            "innerRef": undefined,
+            "isEmpty": true,
+            "maxLength": undefined,
+            "name": "input",
+            "onBlur": [Function],
+            "onChange": [Function],
+            "onFocus": [Function],
+            "onKeyDown": undefined,
+            "placeholder": "My input",
+            "prefix": undefined,
+            "required": true,
+            "tinyLabels": null,
+            "type": "submit",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": false,
+              "rules": Array [
+                "
+  width: 100%;
+  height: ",
+                "2.875rem",
+                ";
+  border-radius: ",
+                "0.25rem",
+                ";
+  background-color: ",
+                "#FFF",
+                ";
+  border: solid ",
+                "0.0625rem",
+                " ",
+                "#696969",
+                ";
+  font-size: ",
+                "0.8125rem",
+                ";
+  letter-spacing: ",
+                "0.00625rem",
+                ";
+  color: ",
+                "#5b6b75",
+                ";
+  padding: 0 ",
+                "3.25rem",
+                ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+                [Function],
+                ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+                "0.0625rem",
+                " ",
+                "#4a90e2",
+                ";
+  }
+
+  ",
+                [Function],
+                ";
+
+  :focus {
+    ",
+                [Function],
+                ";
+  }
+  ",
+                [Function],
+                ";
+  ",
+                [Function],
+                ";
+  :not(:focus) {
+    ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.input",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "input",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        null,
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+            "2.375rem",
+            ";
+  margin-right: ",
+            "1.5625rem",
+            ";
+  input:not(:focus) {
+    ",
+            [Function],
+            ";
+  }
+  ",
+            [Function],
+            ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
 `;
 
 exports[`Input component should match snapshot with icon 1`] = `
-<styled.div
-  valid={true}
->
-  <styled.input
-    autoComplete="new-password"
-    data-test="Input"
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Input
     disableKeys={Array []}
-    disabled={false}
-    isEmpty={true}
+    icon="Icon"
+    label={null}
     name="input"
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
+    onFocus={null}
     placeholder="My input"
-    required={true}
     tinyLabels={null}
     type="submit"
+    valid={true}
     value=""
-  />
-  <styled.div>
-    <Icon
-      color={null}
-      cursor={false}
-      fixCrossAxisAlign={null}
-      height={null}
-      type="Icon"
-      width={null}
-    />
-  </styled.div>
-  <styled.div>
-    <Icon
-      color={null}
-      cursor={false}
-      fixCrossAxisAlign={null}
-      height="13"
-      type="Check"
-      width="13"
-    />
-  </styled.div>
-</styled.div>
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <ForwardRef
+          autoComplete="new-password"
+          data-test="Input"
+          disableKeys={Array []}
+          isEmpty={true}
+          name="input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="My input"
+          required={true}
+          tinyLabels={null}
+          type="submit"
+          value=""
+        />,
+        null,
+      ],
+      "valid": true,
+      "width": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "autoComplete": "new-password",
+          "data-test": "Input",
+          "disableKeys": Array [],
+          "innerRef": undefined,
+          "isEmpty": true,
+          "maxLength": undefined,
+          "name": "input",
+          "onBlur": [Function],
+          "onChange": [Function],
+          "onFocus": [Function],
+          "onKeyDown": undefined,
+          "placeholder": "My input",
+          "prefix": undefined,
+          "required": true,
+          "tinyLabels": null,
+          "type": "submit",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "rules": Array [
+              "
+  width: 100%;
+  height: ",
+              "2.875rem",
+              ";
+  border-radius: ",
+              "0.25rem",
+              ";
+  background-color: ",
+              "#FFF",
+              ";
+  border: solid ",
+              "0.0625rem",
+              " ",
+              "#696969",
+              ";
+  font-size: ",
+              "0.8125rem",
+              ";
+  letter-spacing: ",
+              "0.00625rem",
+              ";
+  color: ",
+              "#5b6b75",
+              ";
+  padding: 0 ",
+              "3.25rem",
+              ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+              [Function],
+              ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+              "0.0625rem",
+              " ",
+              "#4a90e2",
+              ";
+  }
+
+  ",
+              [Function],
+              ";
+
+  :focus {
+    ",
+              [Function],
+              ";
+  }
+  ",
+              [Function],
+              ";
+  ",
+              [Function],
+              ";
+  :not(:focus) {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.input",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      null,
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+          "2.375rem",
+          ";
+  margin-right: ",
+          "1.5625rem",
+          ";
+  input:not(:focus) {
+    ",
+          [Function],
+          ";
+  }
+  ",
+          [Function],
+          ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <ForwardRef
+            autoComplete="new-password"
+            data-test="Input"
+            disableKeys={Array []}
+            isEmpty={true}
+            name="input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="My input"
+            required={true}
+            tinyLabels={null}
+            type="submit"
+            value=""
+          />,
+          null,
+        ],
+        "valid": true,
+        "width": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "autoComplete": "new-password",
+            "data-test": "Input",
+            "disableKeys": Array [],
+            "innerRef": undefined,
+            "isEmpty": true,
+            "maxLength": undefined,
+            "name": "input",
+            "onBlur": [Function],
+            "onChange": [Function],
+            "onFocus": [Function],
+            "onKeyDown": undefined,
+            "placeholder": "My input",
+            "prefix": undefined,
+            "required": true,
+            "tinyLabels": null,
+            "type": "submit",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": false,
+              "rules": Array [
+                "
+  width: 100%;
+  height: ",
+                "2.875rem",
+                ";
+  border-radius: ",
+                "0.25rem",
+                ";
+  background-color: ",
+                "#FFF",
+                ";
+  border: solid ",
+                "0.0625rem",
+                " ",
+                "#696969",
+                ";
+  font-size: ",
+                "0.8125rem",
+                ";
+  letter-spacing: ",
+                "0.00625rem",
+                ";
+  color: ",
+                "#5b6b75",
+                ";
+  padding: 0 ",
+                "3.25rem",
+                ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+                [Function],
+                ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+                "0.0625rem",
+                " ",
+                "#4a90e2",
+                ";
+  }
+
+  ",
+                [Function],
+                ";
+
+  :focus {
+    ",
+                [Function],
+                ";
+  }
+  ",
+                [Function],
+                ";
+  ",
+                [Function],
+                ";
+  :not(:focus) {
+    ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.input",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "input",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        null,
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+            "2.375rem",
+            ";
+  margin-right: ",
+            "1.5625rem",
+            ";
+  input:not(:focus) {
+    ",
+            [Function],
+            ";
+  }
+  ",
+            [Function],
+            ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
 `;
 
 exports[`Input component should match snapshot with label 1`] = `
-<styled.div
-  valid={null}
->
-  <styled.input
-    autoComplete="new-password"
-    data-test="Input"
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Input
     disableKeys={Array []}
-    disabled={false}
-    isEmpty={true}
+    icon={null}
+    label="label"
     name="input"
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
+    onFocus={null}
     placeholder=""
-    required={true}
     tinyLabels={null}
     type="submit"
+    valid={[Function]}
     value=""
-  />
-  <styled.label
-    tinyLabels={null}
-  >
-    label
-  </styled.label>
-</styled.div>
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <ForwardRef
+          autoComplete="new-password"
+          data-test="Input"
+          disableKeys={Array []}
+          isEmpty={true}
+          name="input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          required={true}
+          tinyLabels={null}
+          type="submit"
+          value=""
+        />,
+        <ForwardRef
+          tinyLabels={null}
+        >
+          label
+        </ForwardRef>,
+      ],
+      "valid": null,
+      "width": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "autoComplete": "new-password",
+          "data-test": "Input",
+          "disableKeys": Array [],
+          "innerRef": undefined,
+          "isEmpty": true,
+          "maxLength": undefined,
+          "name": "input",
+          "onBlur": [Function],
+          "onChange": [Function],
+          "onFocus": [Function],
+          "onKeyDown": undefined,
+          "placeholder": "",
+          "prefix": undefined,
+          "required": true,
+          "tinyLabels": null,
+          "type": "submit",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "rules": Array [
+              "
+  width: 100%;
+  height: ",
+              "2.875rem",
+              ";
+  border-radius: ",
+              "0.25rem",
+              ";
+  background-color: ",
+              "#FFF",
+              ";
+  border: solid ",
+              "0.0625rem",
+              " ",
+              "#696969",
+              ";
+  font-size: ",
+              "0.8125rem",
+              ";
+  letter-spacing: ",
+              "0.00625rem",
+              ";
+  color: ",
+              "#5b6b75",
+              ";
+  padding: 0 ",
+              "3.25rem",
+              ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+              [Function],
+              ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+              "0.0625rem",
+              " ",
+              "#4a90e2",
+              ";
+  }
+
+  ",
+              [Function],
+              ";
+
+  :focus {
+    ",
+              [Function],
+              ";
+  }
+  ",
+              [Function],
+              ";
+  ",
+              [Function],
+              ";
+  :not(:focus) {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.input",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "label",
+          "tinyLabels": null,
+        },
+        "ref": null,
+        "rendered": "label",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": false,
+            "rules": Array [
+              "
+  position: absolute;
+  left: ",
+              "3.25rem",
+              ";
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s top, 0.2s color, 0.3s font-size;
+  font-family: Lato;
+  font-size: ",
+              "0.8125rem",
+              ";
+  letter-spacing: ",
+              "0.00625rem",
+              ";
+  text-align: left;
+  color: ",
+              "#5b6b75",
+              ";
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.label",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+          "2.375rem",
+          ";
+  margin-right: ",
+          "1.5625rem",
+          ";
+  input:not(:focus) {
+    ",
+          [Function],
+          ";
+  }
+  ",
+          [Function],
+          ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <ForwardRef
+            autoComplete="new-password"
+            data-test="Input"
+            disableKeys={Array []}
+            isEmpty={true}
+            name="input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder=""
+            required={true}
+            tinyLabels={null}
+            type="submit"
+            value=""
+          />,
+          <ForwardRef
+            tinyLabels={null}
+          >
+            label
+          </ForwardRef>,
+        ],
+        "valid": null,
+        "width": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "autoComplete": "new-password",
+            "data-test": "Input",
+            "disableKeys": Array [],
+            "innerRef": undefined,
+            "isEmpty": true,
+            "maxLength": undefined,
+            "name": "input",
+            "onBlur": [Function],
+            "onChange": [Function],
+            "onFocus": [Function],
+            "onKeyDown": undefined,
+            "placeholder": "",
+            "prefix": undefined,
+            "required": true,
+            "tinyLabels": null,
+            "type": "submit",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": false,
+              "rules": Array [
+                "
+  width: 100%;
+  height: ",
+                "2.875rem",
+                ";
+  border-radius: ",
+                "0.25rem",
+                ";
+  background-color: ",
+                "#FFF",
+                ";
+  border: solid ",
+                "0.0625rem",
+                " ",
+                "#696969",
+                ";
+  font-size: ",
+                "0.8125rem",
+                ";
+  letter-spacing: ",
+                "0.00625rem",
+                ";
+  color: ",
+                "#5b6b75",
+                ";
+  padding: 0 ",
+                "3.25rem",
+                ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+                [Function],
+                ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+                "0.0625rem",
+                " ",
+                "#4a90e2",
+                ";
+  }
+
+  ",
+                [Function],
+                ";
+
+  :focus {
+    ",
+                [Function],
+                ";
+  }
+  ",
+                [Function],
+                ";
+  ",
+                [Function],
+                ";
+  :not(:focus) {
+    ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.input",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "input",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "label",
+            "tinyLabels": null,
+          },
+          "ref": null,
+          "rendered": "label",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": false,
+              "rules": Array [
+                "
+  position: absolute;
+  left: ",
+                "3.25rem",
+                ";
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s top, 0.2s color, 0.3s font-size;
+  font-family: Lato;
+  font-size: ",
+                "0.8125rem",
+                ";
+  letter-spacing: ",
+                "0.00625rem",
+                ";
+  text-align: left;
+  color: ",
+                "#5b6b75",
+                ";
+  ",
+                [Function],
+                ";
+",
+              ],
+            },
+            "displayName": "styled.label",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "label",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+            "2.375rem",
+            ";
+  margin-right: ",
+            "1.5625rem",
+            ";
+  input:not(:focus) {
+    ",
+            [Function],
+            ";
+  }
+  ",
+            [Function],
+            ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
 `;
 
 exports[`Input component should match snapshot with no validation 1`] = `
-<styled.div
-  valid={null}
->
-  <styled.input
-    autoComplete="new-password"
-    data-test="Input"
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Input
     disableKeys={Array []}
-    disabled={false}
-    isEmpty={true}
+    icon={null}
+    label={null}
     name="input"
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
+    onFocus={null}
     placeholder="My input"
-    required={true}
     tinyLabels={null}
     type="submit"
+    valid={null}
     value=""
-  />
-</styled.div>
-`;
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <ForwardRef
+          autoComplete="new-password"
+          data-test="Input"
+          disableKeys={Array []}
+          isEmpty={true}
+          name="input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="My input"
+          required={true}
+          tinyLabels={null}
+          type="submit"
+          value=""
+        />,
+        null,
+      ],
+      "valid": null,
+      "width": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "autoComplete": "new-password",
+          "data-test": "Input",
+          "disableKeys": Array [],
+          "innerRef": undefined,
+          "isEmpty": true,
+          "maxLength": undefined,
+          "name": "input",
+          "onBlur": [Function],
+          "onChange": [Function],
+          "onFocus": [Function],
+          "onKeyDown": undefined,
+          "placeholder": "My input",
+          "prefix": undefined,
+          "required": true,
+          "tinyLabels": null,
+          "type": "submit",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "rules": Array [
+              "
+  width: 100%;
+  height: ",
+              "2.875rem",
+              ";
+  border-radius: ",
+              "0.25rem",
+              ";
+  background-color: ",
+              "#FFF",
+              ";
+  border: solid ",
+              "0.0625rem",
+              " ",
+              "#696969",
+              ";
+  font-size: ",
+              "0.8125rem",
+              ";
+  letter-spacing: ",
+              "0.00625rem",
+              ";
+  color: ",
+              "#5b6b75",
+              ";
+  padding: 0 ",
+              "3.25rem",
+              ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
 
-exports[`Input component should match snapshot with prefix 1`] = `
-<styled.div
-  valid={null}
->
-  <styled.input
-    autoComplete="new-password"
-    data-test="Input"
-    disableKeys={Array []}
-    disabled={false}
-    isEmpty={true}
-    name="input"
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    placeholder="My input"
-    prefix="$"
-    required={true}
-    tinyLabels={null}
-    type="text"
-    value=""
-  />
-</styled.div>
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+              [Function],
+              ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+              "0.0625rem",
+              " ",
+              "#4a90e2",
+              ";
+  }
+
+  ",
+              [Function],
+              ";
+
+  :focus {
+    ",
+              [Function],
+              ";
+  }
+  ",
+              [Function],
+              ";
+  ",
+              [Function],
+              ";
+  :not(:focus) {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.input",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      null,
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+          "2.375rem",
+          ";
+  margin-right: ",
+          "1.5625rem",
+          ";
+  input:not(:focus) {
+    ",
+          [Function],
+          ";
+  }
+  ",
+          [Function],
+          ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <ForwardRef
+            autoComplete="new-password"
+            data-test="Input"
+            disableKeys={Array []}
+            isEmpty={true}
+            name="input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="My input"
+            required={true}
+            tinyLabels={null}
+            type="submit"
+            value=""
+          />,
+          null,
+        ],
+        "valid": null,
+        "width": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "autoComplete": "new-password",
+            "data-test": "Input",
+            "disableKeys": Array [],
+            "innerRef": undefined,
+            "isEmpty": true,
+            "maxLength": undefined,
+            "name": "input",
+            "onBlur": [Function],
+            "onChange": [Function],
+            "onFocus": [Function],
+            "onKeyDown": undefined,
+            "placeholder": "My input",
+            "prefix": undefined,
+            "required": true,
+            "tinyLabels": null,
+            "type": "submit",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": false,
+              "rules": Array [
+                "
+  width: 100%;
+  height: ",
+                "2.875rem",
+                ";
+  border-radius: ",
+                "0.25rem",
+                ";
+  background-color: ",
+                "#FFF",
+                ";
+  border: solid ",
+                "0.0625rem",
+                " ",
+                "#696969",
+                ";
+  font-size: ",
+                "0.8125rem",
+                ";
+  letter-spacing: ",
+                "0.00625rem",
+                ";
+  color: ",
+                "#5b6b75",
+                ";
+  padding: 0 ",
+                "3.25rem",
+                ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+                [Function],
+                ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+                "0.0625rem",
+                " ",
+                "#4a90e2",
+                ";
+  }
+
+  ",
+                [Function],
+                ";
+
+  :focus {
+    ",
+                [Function],
+                ";
+  }
+  ",
+                [Function],
+                ";
+  ",
+                [Function],
+                ";
+  :not(:focus) {
+    ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.input",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "input",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        null,
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+            "2.375rem",
+            ";
+  margin-right: ",
+            "1.5625rem",
+            ";
+  input:not(:focus) {
+    ",
+            [Function],
+            ";
+  }
+  ",
+            [Function],
+            ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
 `;
 
 exports[`Input component should match snapshot with success validation 1`] = `
-<styled.div
-  valid={true}
->
-  <styled.input
-    autoComplete="new-password"
-    data-test="Input"
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Input
     disableKeys={Array []}
-    disabled={false}
-    isEmpty={true}
+    icon={null}
+    label={null}
     name="input"
     onBlur={[Function]}
     onChange={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
+    onFocus={null}
     placeholder="My input"
-    required={true}
     tinyLabels={null}
     type="submit"
+    valid={true}
     value=""
-  />
-  <styled.div>
-    <Icon
-      color={null}
-      cursor={false}
-      fixCrossAxisAlign={null}
-      height="13"
-      type="Check"
-      width="13"
-    />
-  </styled.div>
-</styled.div>
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <ForwardRef
+          autoComplete="new-password"
+          data-test="Input"
+          disableKeys={Array []}
+          isEmpty={true}
+          name="input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="My input"
+          required={true}
+          tinyLabels={null}
+          type="submit"
+          value=""
+        />,
+        null,
+      ],
+      "valid": true,
+      "width": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "autoComplete": "new-password",
+          "data-test": "Input",
+          "disableKeys": Array [],
+          "innerRef": undefined,
+          "isEmpty": true,
+          "maxLength": undefined,
+          "name": "input",
+          "onBlur": [Function],
+          "onChange": [Function],
+          "onFocus": [Function],
+          "onKeyDown": undefined,
+          "placeholder": "My input",
+          "prefix": undefined,
+          "required": true,
+          "tinyLabels": null,
+          "type": "submit",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "rules": Array [
+              "
+  width: 100%;
+  height: ",
+              "2.875rem",
+              ";
+  border-radius: ",
+              "0.25rem",
+              ";
+  background-color: ",
+              "#FFF",
+              ";
+  border: solid ",
+              "0.0625rem",
+              " ",
+              "#696969",
+              ";
+  font-size: ",
+              "0.8125rem",
+              ";
+  letter-spacing: ",
+              "0.00625rem",
+              ";
+  color: ",
+              "#5b6b75",
+              ";
+  padding: 0 ",
+              "3.25rem",
+              ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+              [Function],
+              ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+              "0.0625rem",
+              " ",
+              "#4a90e2",
+              ";
+  }
+
+  ",
+              [Function],
+              ";
+
+  :focus {
+    ",
+              [Function],
+              ";
+  }
+  ",
+              [Function],
+              ";
+  ",
+              [Function],
+              ";
+  :not(:focus) {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.input",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      null,
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+          "2.375rem",
+          ";
+  margin-right: ",
+          "1.5625rem",
+          ";
+  input:not(:focus) {
+    ",
+          [Function],
+          ";
+  }
+  ",
+          [Function],
+          ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <ForwardRef
+            autoComplete="new-password"
+            data-test="Input"
+            disableKeys={Array []}
+            isEmpty={true}
+            name="input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="My input"
+            required={true}
+            tinyLabels={null}
+            type="submit"
+            value=""
+          />,
+          null,
+        ],
+        "valid": true,
+        "width": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "autoComplete": "new-password",
+            "data-test": "Input",
+            "disableKeys": Array [],
+            "innerRef": undefined,
+            "isEmpty": true,
+            "maxLength": undefined,
+            "name": "input",
+            "onBlur": [Function],
+            "onChange": [Function],
+            "onFocus": [Function],
+            "onKeyDown": undefined,
+            "placeholder": "My input",
+            "prefix": undefined,
+            "required": true,
+            "tinyLabels": null,
+            "type": "submit",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": false,
+              "rules": Array [
+                "
+  width: 100%;
+  height: ",
+                "2.875rem",
+                ";
+  border-radius: ",
+                "0.25rem",
+                ";
+  background-color: ",
+                "#FFF",
+                ";
+  border: solid ",
+                "0.0625rem",
+                " ",
+                "#696969",
+                ";
+  font-size: ",
+                "0.8125rem",
+                ";
+  letter-spacing: ",
+                "0.00625rem",
+                ";
+  color: ",
+                "#5b6b75",
+                ";
+  padding: 0 ",
+                "3.25rem",
+                ";
+  transition: 0.3s padding, 0.3s border;
+  box-shadow: none;
+
+  ::-ms-clear {
+    display: none !important;
+  }
+  ",
+                [Function],
+                ";
+
+  :focus {
+    outline: none;
+    border: solid ",
+                "0.0625rem",
+                " ",
+                "#4a90e2",
+                ";
+  }
+
+  ",
+                [Function],
+                ";
+
+  :focus {
+    ",
+                [Function],
+                ";
+  }
+  ",
+                [Function],
+                ";
+  ",
+                [Function],
+                ";
+  :not(:focus) {
+    ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.input",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "input",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        null,
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: ",
+            "2.375rem",
+            ";
+  margin-right: ",
+            "1.5625rem",
+            ";
+  input:not(:focus) {
+    ",
+            [Function],
+            ";
+  }
+  ",
+            [Function],
+            ";
+
+  ~ input {
+    background-color: #ccc;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
 `;

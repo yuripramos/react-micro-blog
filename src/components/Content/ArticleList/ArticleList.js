@@ -14,7 +14,7 @@ import {
 } from "./styles";
 
 function ArticleList({ articlesList }) {
-  const isFilled = articlesList.length > 0;
+  const isFilled = articlesList && articlesList.length > 0;
   return (
     <ListWrapper>
       <Title>Articles</Title>
