@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { array } from "prop-types";
 import moment from "moment";
 import ContentFilters from "./ContentFilters";
-import { findById, filterArtistByName } from "../../../utils/filters";
+import { findById, filterContentByType } from "../../../utils/filters";
 
 import {
   Wrapper,
@@ -32,7 +32,7 @@ class ArticleDetail extends Component {
     const { authorsList, articlesList } = this.props;
     this.setState({
       filter,
-      articlesDisplayed: filterArtistByName(
+      articlesDisplayed: filterContentByType(
         authorsList,
         articlesList,
         filter.range,
@@ -81,7 +81,9 @@ class ArticleDetail extends Component {
             </Article>
           ))
         ) : (
-          <span>No content to display, please try again</span>
+          <span>
+            No content to display, please refresh the page and try again
+          </span>
         )}
       </Wrapper>
     );

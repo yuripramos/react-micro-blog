@@ -3,7 +3,7 @@ import { rem, media } from "../../styles/tools";
 import { white, green } from "../../styles/settings";
 
 export const HeaderWrapper = styled.header`
-  height: ${rem(58)};
+  height: 10vh;
   padding-top: ${rem(10)};
   background: ${green};
   text-align: center;
@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
     text-align: center;
   `)};
   ${media.lg(css`
-    height: 10vh;
+    height: ${rem(58)};
     padding-top: ${rem(6)};
   `)};
 `;

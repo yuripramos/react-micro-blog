@@ -12,7 +12,7 @@ This project was made focusing on the flat architecture for high scalable projec
 
 :heavy_check_mark: Reusable Filter
 
-:heavy_check_mark: Responsive SPA (Minimum resolution: 450px)
+:heavy_check_mark: Responsive SPA (Minimum resolution: 420px)
 
 :heavy_check_mark: React@16
 
@@ -57,9 +57,9 @@ More about Redux-zero [here](https://medium.com/@matheusml/introducing-redux-zer
 
 ## Unit Tests
 
-`npm run test:coverage` **Coverage Threshold > 60%**. Currently ~= 70%.
+`npm run test:coverage` **Coverage Threshold > 60%**. Currently tests ~= 72%.
 
-**The Unit tests was made focusing in API responses and changing state expected behaviors**
+**The Unit tests was made focusing in API responses and changing state according expected behaviors**
 
 ## Features
 

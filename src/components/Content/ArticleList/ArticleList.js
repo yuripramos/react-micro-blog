@@ -26,9 +26,9 @@ function ArticleList({ articlesList }) {
                 <Icon name="Papers" />
               </Description>
               <Name>{e.title}</Name>
-              <InfoStyle>{`Published at:${moment(e.metadata.publishedAt).format(
-                "L"
-              )}`}</InfoStyle>
+              <InfoStyle>{`Published at: ${moment(
+                e.metadata.publishedAt
+              ).format("L")}`}</InfoStyle>
             </Info>
           </Item>
         ))

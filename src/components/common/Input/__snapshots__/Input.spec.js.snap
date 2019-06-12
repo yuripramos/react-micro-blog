@@ -5,8 +5,6 @@ exports[`Input component should match snapshot 1`] = `
   valid={null}
 >
   <styled.input
-    autoComplete="new-password"
-    data-test="Input"
     disableKeys={Array []}
     isEmpty={true}
     name="input"
@@ -15,7 +13,6 @@ exports[`Input component should match snapshot 1`] = `
     onFocus={[Function]}
     placeholder="My input"
     required={true}
-    tinyLabels={null}
     type="submit"
     value=""
   />
@@ -27,8 +24,6 @@ exports[`Input component should match snapshot with error validation 1`] = `
   valid={false}
 >
   <styled.input
-    autoComplete="new-password"
-    data-test="Input"
     disableKeys={Array []}
     isEmpty={true}
     name="input"
@@ -37,7 +32,6 @@ exports[`Input component should match snapshot with error validation 1`] = `
     onFocus={[Function]}
     placeholder="My input"
     required={true}
-    tinyLabels={null}
     type="submit"
     value=""
   />
@@ -49,9 +43,8 @@ exports[`Input component should match snapshot with icon 1`] = `
   valid={true}
 >
   <styled.input
-    autoComplete="new-password"
-    data-test="Input"
     disableKeys={Array []}
+    icon="Icon"
     isEmpty={true}
     name="input"
     onBlur={[Function]}
@@ -59,7 +52,6 @@ exports[`Input component should match snapshot with icon 1`] = `
     onFocus={[Function]}
     placeholder="My input"
     required={true}
-    tinyLabels={null}
     type="submit"
     value=""
   />
@@ -71,8 +63,6 @@ exports[`Input component should match snapshot with label 1`] = `
   valid={null}
 >
   <styled.input
-    autoComplete="new-password"
-    data-test="Input"
     disableKeys={Array []}
     isEmpty={true}
     name="input"
@@ -81,13 +71,10 @@ exports[`Input component should match snapshot with label 1`] = `
     onFocus={[Function]}
     placeholder=""
     required={true}
-    tinyLabels={null}
     type="submit"
     value=""
   />
-  <styled.label
-    tinyLabels={null}
-  >
+  <styled.label>
     label
   </styled.label>
 </styled.div>
@@ -98,8 +85,6 @@ exports[`Input component should match snapshot with no validation 1`] = `
   valid={null}
 >
   <styled.input
-    autoComplete="new-password"
-    data-test="Input"
     disableKeys={Array []}
     isEmpty={true}
     name="input"
@@ -108,7 +93,6 @@ exports[`Input component should match snapshot with no validation 1`] = `
     onFocus={[Function]}
     placeholder="My input"
     required={true}
-    tinyLabels={null}
     type="submit"
     value=""
   />
@@ -120,8 +104,6 @@ exports[`Input component should match snapshot with success validation 1`] = `
   valid={true}
 >
   <styled.input
-    autoComplete="new-password"
-    data-test="Input"
     disableKeys={Array []}
     isEmpty={true}
     name="input"
@@ -130,7 +112,6 @@ exports[`Input component should match snapshot with success validation 1`] = `
     onFocus={[Function]}
     placeholder="My input"
     required={true}
-    tinyLabels={null}
     type="submit"
     value=""
   />
