@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './styles.scss';
 
-import Store from './store';
+// import Store from './store';
 // import Header from '../components/Header';
 // import Main from '../components/Main';
 // import Footer from '../components/Footer';
 const App = () => (
   <div id="app" >
-    <Store>
-      {/* <Header />
+    {/* <Store> */}
+    {/* <Header />
       <Main />
       <Footer /> */}
       oioioioioioioioioioioioioioi
-    </Store>
+    {/* </Store> */}
   </div>
 );
 
