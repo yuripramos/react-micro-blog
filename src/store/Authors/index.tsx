@@ -16,12 +16,12 @@ const getLocalStorageState = () => {
   return lsState ? lsState : INITIAL_STATE;
 };
 
-const setLocalStorageState = (state) => setStorageObject(STORAGE_ID, state);
+const setLocalStorageState = (state: any) => setStorageObject(STORAGE_ID, state);
 
 export const AuthorsContext = createContext();
-export const AuthorsProvider = ({ children }) => {
+export const AuthorsProvider = ({ children }: React.ReactNode) => {
   const [state, setState] = useState(getLocalStorageState);
-  const updateState = (payload) => setState((state) => ({ ...state, ...payload }));
+  const updateState = (payload: any) => setState((state: any) => ({ ...state, ...payload }));
   const providerValue = { state, setState: updateState };
 
   useEffect(() => {
