@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, ReactNode } from 'react';
 
 import { getAuthors } from '../../services/api';
 import { getStorageObject, setStorageObject, areEqualObjects } from '../../utils/helpers';
@@ -6,7 +6,7 @@ import { getStorageObject, setStorageObject, areEqualObjects } from '../../utils
 const STORAGE_ID = 'the-simple-post-authors';
 
 const INITIAL_STATE = {
-  data: [],
+  data: [] as any[],
   loaded: true,
   error: false,
 };
@@ -18,8 +18,13 @@ const getLocalStorageState = () => {
 
 const setLocalStorageState = (state: any) => setStorageObject(STORAGE_ID, state);
 
-export const AuthorsContext = createContext();
-export const AuthorsProvider = ({ children }: React.ReactNode) => {
+export const AuthorsContext = createContext({});
+
+type Props = {
+  children: ReactNode
+}
+
+export const AuthorsProvider: React.FC<Props> = ({ children }) => {
   const [state, setState] = useState(getLocalStorageState);
   const updateState = (payload: any) => setState((state: any) => ({ ...state, ...payload }));
   const providerValue = { state, setState: updateState };
@@ -47,7 +52,7 @@ export const AuthorsProvider = ({ children }: React.ReactNode) => {
   return <AuthorsContext.Provider value={providerValue}>{children}</AuthorsContext.Provider>;
 };
 
-export default {
-  AuthorsContext,
-  AuthorsProvider,
-};
+// export default {
+//   AuthorsContext,
+//   AuthorsProvider,
+// };

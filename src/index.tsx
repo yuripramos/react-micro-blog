@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './styles.scss';
+import './styles.scss';
 
 import Store from './store';
 // import Header from '../components/Header';

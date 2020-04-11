@@ -1,12 +1,12 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, ReactNode } from 'react';
 
-import { getPosts } from '../../services/api';
+import { getPosts } from '../../../src/services/api';
 import { getStorageObject, setStorageObject, areEqualObjects } from '../../utils/helpers';
 
 const STORAGE_ID = 'the-simple-post-posts';
 
 const INITIAL_STATE = {
-  data: [],
+  data: [] as any[],
   loaded: true,
   error: false,
 };
@@ -16,12 +16,18 @@ const getLocalStorageState = () => {
   return lsState ? lsState : INITIAL_STATE;
 };
 
-const setLocalStorageState = (state) => setStorageObject(STORAGE_ID, state);
+const setLocalStorageState = (state: any) => setStorageObject(STORAGE_ID, state);
 
-export const PostsContext = createContext();
-export const PostsProvider = ({ children }) => {
+export const PostsContext = createContext({});
+
+type Props = {
+  children: ReactNode
+}
+
+
+export const PostsProvider: React.FC<Props> = ({ children }) => {
   const [state, setState] = useState(getLocalStorageState);
-  const updateState = (payload) => setState((state) => ({ ...state, ...payload }));
+  const updateState = (payload: any) => setState((state: any) => ({ ...state, ...payload }));
   const providerValue = { state, setState: updateState };
 
   useEffect(() => {
