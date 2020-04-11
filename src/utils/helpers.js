@@ -49,9 +49,11 @@ export const setStorageObject = (lsId, obj = {}) => {
   const lsObject = getStorageObject(lsId);
   const newObj = lsObject ? lsObject : {};
 
+  console.log("newojb antes do forloop", newObj);
   for (const [key, value] of Object.entries(obj)) {
     newObj[key] = value;
   }
+  console.log("newobj depois do forloop", newObj);
 
   ls.set(lsId, newObj);
 

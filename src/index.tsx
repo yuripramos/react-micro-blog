@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.scss';
 
-import Store from './store';
+import Store from './store/index';
 // import Header from '../components/Header';
 // import Main from '../components/Main';
 // import Footer from '../components/Footer';
