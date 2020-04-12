@@ -1,7 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './styles.scss';
 
-import { ReactComponent as AngleDown } from '../../assets/icons/angle-down.svg';
+import { ReactComponent as AngleDown } from '../../assets/icons/angle-down.svg';]
+
+type Props = {
+  id: any,
+  data: [],
+  placeholder: string,
+  multiple: boolean,
+  dataLabel: number,
+  value: [],
+  disabled: boolean,
+  onChange: (selection: string) => void,
+  className: string
+}
 
 export default ({
   id,
@@ -13,12 +25,12 @@ export default ({
   disabled = false,
   onChange,
   className,
-}) => {
+}: Props) => {
   const [isActive, setActive] = useState(false);
   const [isDisabled, setDisabled] = useState(disabled);
-  const [selected, setSelected] = useState(value);
+  const [selected, setSelected] = useState(value as any);
 
-  const isSelected = (value) => selected.includes(value);
+  const isSelected = (value: []) => selected.includes(value);
   const hasData = data.length > 0;
   const hasSelected = selected.length > 0;
   const isAllSelected = selected.length === data.length;
@@ -28,12 +40,12 @@ export default ({
   };
 
   const toggleAll = () => {
-    const selection = isAllSelected ? [] : [...data];
+    const selection: any = isAllSelected ? [] : [...data];
     setSelected(selection);
     onChange(selection);
   };
 
-  const toggleSelection = (item) => {
+  const toggleSelection = (item: any) => {
     let selection;
 
     if (multiple) {

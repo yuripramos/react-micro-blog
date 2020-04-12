@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({ data }) => {
+export default ({ data }: any) => {
   const {
     title,
     metadata: { authorId, publishedAt },
@@ -8,7 +8,7 @@ export default ({ data }) => {
 
   const postId = `post-${authorId}-${publishedAt}`;
 
-  const handleClick = (e) => {
+  const handleClick = (e: any) => {
     e.preventDefault();
     const targetElement = document.getElementById(postId);
     if (targetElement) targetElement.scrollIntoView({ behavior: 'smooth' });
