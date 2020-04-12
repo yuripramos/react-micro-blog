@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 
-import image from '../../assets/images/newspaper.png';
+let image = require('../../assets/images/newspaper.png');
 
 export default () => (
   <section className="hero">

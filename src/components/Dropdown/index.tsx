@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './styles.scss';
 
-import { ReactComponent as AngleDown } from '../../assets/icons/angle-down.svg';]
+let AngleDown = require('../../assets/icons/angle-down.svg');
 
 type Props = {
   id: any,
   data: [],
   placeholder: string,
   multiple: boolean,
-  dataLabel: number,
+  dataLabel: string,
   value: [],
   disabled: boolean,
-  onChange: (selection: string) => void,
+  onChange: (selection: any) => void,
   className: string
 }
 
