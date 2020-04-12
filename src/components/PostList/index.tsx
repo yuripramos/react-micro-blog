@@ -4,9 +4,9 @@ import Post from '../Post/index';
 import Dropdown from '../Dropdown/index';
 import NoContent from '../NoContent/index';
 import { AuthorsContext } from '../../store/Authors/index';
-let Arrow = require('../../assets/icons/arrow.svg');
+import Arrow from '../../assets/icons/Arrow';
 
-const getKey = (post) => {
+const getKey = (post: any) => {
   const { authorId, publishedAt } = post.metadata;
   return `post-${authorId}-${publishedAt}`;
 };
@@ -19,7 +19,7 @@ export default ({ data }: Props) => {
   const [posts, setPosts] = useState([]);
   const [descOrdered, setDescOrdered] = useState(true);
   const [authorFilter, setAuthorFilter] = useState([]);
-  const { state: authors } = useContext(AuthorsContext);
+  const { state }: any = useContext(AuthorsContext);
   const hasPosts = posts.length > 0;
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default ({ data }: Props) => {
   useEffect(() => {
     if (authorFilter.length) {
       const idList = authorFilter.map((author) => author.id);
-      const filteredPosts = data.filter((post) => idList.includes(post.metadata.authorId));
+      const filteredPosts = data.filter((post: any) => idList.includes(post.metadata.authorId));
       setPosts(filteredPosts);
     }
   }, [authorFilter]); //eslint-disable-line
@@ -42,7 +42,7 @@ export default ({ data }: Props) => {
           <aside>
             <Dropdown
               id="authors-dropdown"
-              data={authors.data}
+              data={state.data}
               placeholder="Filter by Author"
               dataLabel="name"
               multiple={true}

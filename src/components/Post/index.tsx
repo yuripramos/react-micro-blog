@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { AuthorsContext } from '../../store/Authors/index';
 import { getDate } from '../../utils/helpers';
 
-type Post {
+type Post = {
   data: {
     title: string;
     body: string;
@@ -19,7 +19,7 @@ type Post {
 export default ({ data: { title, body, metadata }, id }: Post) => {
   const { authorId, publishedAt } = metadata;
   const { state: authors }: any = useContext(AuthorsContext);
-  const { name: authorName } = authors.data.find((author) => author.id === authorId) || {};
+  const { name: authorName } = authors.data.find((author: any) => author.id === authorId) || {};
   const date = getDate(publishedAt);
 
   return (

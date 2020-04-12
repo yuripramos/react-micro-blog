@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './styles.scss';
-
-let AngleDown = require('../../assets/icons/angle-down.svg');
+import AngleDown from '../../assets/icons/AngleDown';
 
 type Props = {
   id: any,
-  data: [],
+  data: any,
   placeholder: string,
   multiple: boolean,
   dataLabel: string,
-  value: [],
-  disabled: boolean,
+  value?: [],
+  disabled?: boolean,
   onChange: (selection: any) => void,
-  className: string
+  className?: string
 }
 
 export default ({
@@ -111,7 +110,7 @@ export default ({
                   </button>
                 </li>
               )}
-              {data.map((item) => {
+              {data.map((item: any) => {
                 const key = item[dataLabel];
                 return (
                   <li key={`${id}-option-${key}`}>

@@ -7,8 +7,7 @@ import { PostsContext } from '../../store/Posts/index';
 import { sortObjectsArrayByKey } from '../../utils/helpers';
 
 export default () => {
-  const { state: posts } = useContext(PostsContext);
-  console.log(posts.data);
+  const { state: posts }: any = useContext(PostsContext);
   const sortedDescPosts = sortObjectsArrayByKey(posts.data, ['metadata', 'publishedAt'], true);
 
   return (
