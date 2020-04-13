@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import './styles.scss';
 
 import Store from './store/index';
-// import Header from '../components/Header';
-// import Main from '../components/Main';
-// import Footer from '../components/Footer';
+import Header from './components/Header/index';
+import Main from './components/Main/index';
+import Footer from './components/Footer/index';
+
 const App = () => (
   <div id="app" >
     <Store>
-      {/* <Header />
+      <Header />
       <Main />
-      <Footer /> */}
-      oioioioioioioioioioioioioioi
+      <Footer />
     </Store>
   </div>
 );

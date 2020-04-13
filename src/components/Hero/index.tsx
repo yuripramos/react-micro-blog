@@ -6,7 +6,7 @@ import image from '../../assets/images/newspaper.png';
 export default () => (
   <section className="hero">
     <article>
-      <h1>The Simple Post</h1>
+      <h1>React Micro Blog</h1>
       <p>Simple posts from a simple mocky.</p>
     </article>
     <article>
