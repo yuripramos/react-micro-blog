@@ -20,7 +20,7 @@ Makefiles aren't Windows friendly, if you have minGW64 and whole environment to 
 ```sh
 make installation
 make start
-access http://localhost:3000/
+access http://localhost:8080/
 ```
 
 If you **don't** have makefile enviroment ready, do this instead :
@@ -29,7 +29,7 @@ If you **don't** have makefile enviroment ready, do this instead :
 
 npm install or yarn install
 npm run start
-access http://localhost:3000/
+access http://localhost:8080/
 ```
 
 **Requires node >= 10.0.0**
