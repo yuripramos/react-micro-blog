@@ -37,7 +37,11 @@ access http://localhost:8080/
 
 ## Unit Tests
 
-`npm run test:coverage` **Coverage Threshold > 60%**. Currently tests ~= 72%.
+`npm run test:coverage`
+
+**Coverage Threshold > 60%**
+
+Currently tests ~= 72%.
 
 **The Unit tests was made focusing in API responses and changing state according expected behaviors**
 
