@@ -84,7 +84,8 @@
       "enzyme-to-json/serializer"
     ],
     "transformIgnorePatterns": [
-      "/node_modules/"
+      "/node_modules/",
+      "/my-custom-transform/"
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [
@@ -97,7 +98,7 @@
     "transform": {
       "\\.jsx?$": "babel-jest",
       "^.+\\.(ts|tsx)$": "ts-jest",
-      "^.+\\.css$": "jest-transform-css"
+      "\\.(css|less|scss)$": "identity-obj-proxy"
     },
     "setupFilesAfterEnv": [
       "@testing-library/jest-dom/extend-expect"

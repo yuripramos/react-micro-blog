@@ -14,7 +14,7 @@ type Props = {
   className?: string
 }
 
-export default ({
+export const Dropdown = ({
   id,
   data = [],
   placeholder = 'Select',
@@ -131,3 +131,6 @@ export default ({
     </fieldset>
   );
 };
+
+
+export default Dropdown;
