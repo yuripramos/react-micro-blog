@@ -19,6 +19,7 @@
     "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.9.0",
     "@babel/runtime": "^7.8.4",
     "@svgr/webpack": "^5.1.0",
     "@testing-library/jest-dom": "^5.5.0",
@@ -86,15 +87,17 @@
       "/node_modules/"
     ],
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "src/**/*.ts"
+      "src/**/*.test.js",
+      "src/**/*.test.tsx"
     ],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "reporters": [
       "default"
     ],
+    "preset": "ts-jest",
     "transform": {
-      "^.+\\.tsx?$": "ts-jest"
+      "\\.jsx?$": "babel-jest",
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.css$": "jest-transform-css"
     },
     "setupFilesAfterEnv": [
       "@testing-library/jest-dom/extend-expect"
