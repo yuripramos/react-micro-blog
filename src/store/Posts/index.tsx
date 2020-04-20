@@ -18,14 +18,14 @@ const getLocalStorageState = () => {
 
 const setLocalStorageState = (state: any) => setStorageObject(STORAGE_ID, state);
 
-export const PostsContext = createContext({});
+const PostsContext = createContext({});
 
 type Props = {
   children: ReactNode
 }
 
 
-export const PostsProvider: React.FC<Props> = ({ children }) => {
+const PostsProvider: React.FC<Props> = ({ children }) => {
   const [state, setState] = useState(getLocalStorageState);
   const updateState = (payload: any) => setState((state: any) => ({ ...state, ...payload }));
   const providerValue = { state, setState: updateState };
@@ -53,7 +53,7 @@ export const PostsProvider: React.FC<Props> = ({ children }) => {
   return <PostsContext.Provider value={providerValue}>{children}</PostsContext.Provider>;
 };
 
-export default {
+export {
   PostsContext,
   PostsProvider,
 };
