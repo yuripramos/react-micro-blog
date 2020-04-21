@@ -30,8 +30,8 @@ describe("Dropdown component", () => {
     expect(getByTestId('dropdown')).toBeDefined();
   });
 
-  it("on Trigger button change class inside dropdown", () => {
-    const { getByTestId, container } = render(
+  it("Trigger button index 1 in dropdown", () => {
+    const { getByTestId } = render(
       <Dropdown {...props} />
     );
 
@@ -39,6 +39,10 @@ describe("Dropdown component", () => {
       fireEvent.click(getByTestId('trigger'));
     });
 
-    expect(container).toHaveClass('active')
+    act(() => {
+      fireEvent.click(getByTestId('button-2'));
+    });
+
+    expect(getByTestId('button-2')).toHaveClass('selected')
   });
 })

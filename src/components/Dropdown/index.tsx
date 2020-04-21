@@ -112,12 +112,13 @@ export const Dropdown = ({
                   </button>
                 </li>
               )}
-              {data.map((item: any) => {
+              {data.map((item: any, i: any) => {
                 const key = item[dataLabel];
                 return (
-                  <li key={`option-${key}`}>
+                  <li key={`option-${i}`}>
                     <button
                       title={key}
+                      data-testid={`button-${i}`}
                       onClick={() => toggleSelection(item)}
                       className={isSelected(item) ? 'selected' : ''}
                     >
