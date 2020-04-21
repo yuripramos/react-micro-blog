@@ -14,7 +14,7 @@ type Props = {
   className?: string
 }
 
-export default ({
+export const Dropdown = ({
   id,
   data = [],
   placeholder = 'Select',
@@ -85,9 +85,11 @@ export default ({
       disabled={isDisabled}
       onMouseLeave={() => setActive(false)}
       className={`dropdown ${className || ''} ${isActive ? 'active' : ''} ${multiple ? 'multiple' : ''}`}
+      data-testid="dropdown"
     >
       <button
         className="btn trigger"
+        data-testid="trigger"
         onClick={handleClick}
         title={`${selectionText}${offsetText ? ` ${offsetText}` : ''}`}
       >
@@ -110,12 +112,13 @@ export default ({
                   </button>
                 </li>
               )}
-              {data.map((item: any) => {
+              {data.map((item: any, i: any) => {
                 const key = item[dataLabel];
                 return (
-                  <li key={`${id}-option-${key}`}>
+                  <li key={`option-${i}`}>
                     <button
                       title={key}
+                      data-testid={`button-${i}`}
                       onClick={() => toggleSelection(item)}
                       className={isSelected(item) ? 'selected' : ''}
                     >
@@ -131,3 +134,6 @@ export default ({
     </fieldset>
   );
 };
+
+
+export default Dropdown;
