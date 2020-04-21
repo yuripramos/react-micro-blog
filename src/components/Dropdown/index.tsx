@@ -85,9 +85,11 @@ export const Dropdown = ({
       disabled={isDisabled}
       onMouseLeave={() => setActive(false)}
       className={`dropdown ${className || ''} ${isActive ? 'active' : ''} ${multiple ? 'multiple' : ''}`}
+      data-testid="dropdown"
     >
       <button
         className="btn trigger"
+        data-testid="trigger"
         onClick={handleClick}
         title={`${selectionText}${offsetText ? ` ${offsetText}` : ''}`}
       >
@@ -113,7 +115,7 @@ export const Dropdown = ({
               {data.map((item: any) => {
                 const key = item[dataLabel];
                 return (
-                  <li key={`${id}-option-${key}`}>
+                  <li key={`option-${key}`}>
                     <button
                       title={key}
                       onClick={() => toggleSelection(item)}

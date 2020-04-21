@@ -29,4 +29,16 @@ describe("Dropdown component", () => {
 
     expect(getByTestId('dropdown')).toBeDefined();
   });
+
+  it("on Trigger button change class inside dropdown", () => {
+    const { getByTestId, container } = render(
+      <Dropdown {...props} />
+    );
+
+    act(() => {
+      fireEvent.click(getByTestId('trigger'));
+    });
+
+    expect(container).toHaveClass('active')
+  });
 })
