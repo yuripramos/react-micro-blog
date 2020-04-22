@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { render, cleanup, fireEvent, act } from '@testing-library/react';
-import Dropdown from '../Dropdown/index';
+import Dropdown from './index';
 
 
-describe("Dropdown component", () => {
+describe("<Dropdown />", () => {
 
   afterEach(cleanup);
   const props = {
@@ -30,7 +30,7 @@ describe("Dropdown component", () => {
     expect(getByTestId('dropdown')).toBeDefined();
   });
 
-  it("Trigger button index 1 in dropdown", () => {
+  it("Trigger button index 2 in dropdown", () => {
     const { getByTestId } = render(
       <Dropdown {...props} />
     );
@@ -44,5 +44,22 @@ describe("Dropdown component", () => {
     });
 
     expect(getByTestId('button-2')).toHaveClass('selected')
+  });
+
+  it("Click multiples elements inside dropdown", () => {
+    const { getByTestId } = render(
+      <Dropdown {...props} />
+    );
+
+    act(() => {
+      fireEvent.click(getByTestId('trigger'));
+    });
+
+    act(() => {
+      fireEvent.click(getByTestId('button-2'));
+      fireEvent.click(getByTestId('button-1'));
+    });
+
+    expect(getByTestId('dropdown')).toHaveClass('activated')
   });
 })
