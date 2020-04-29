@@ -16,7 +16,7 @@ export default ({ data }: any) => {
 
   return (
     <li className="latest">
-      <a onClick={handleClick} href={`#${postId}`} data-testid="latest" title={`Read the post "${title}"`}>
+      <a onClick={handleClick} href={`#${postId}`} id="latest" title={`Read the post "${title}"`}>
         {title}
       </a>
     </li>
