@@ -13,7 +13,10 @@ describe("<Post />", () => {
     data: {
       title: "One Title",
       body: "body body body",
-      metadata: "Meta K241-23"
+      metadata: {
+        authorId: "21312",
+        publishedAt: "10-04-19 12:00:17"
+      }
     },
     id: "2421"
   }
