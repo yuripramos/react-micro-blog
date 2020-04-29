@@ -89,7 +89,8 @@
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.{js, ts,tsx, jsx}"
+      "src/**/*.{js, ts,tsx, jsx}",
+      "!src/utils/*.{js, ts,tsx, jsx}"
     ],
     "reporters": [
       "default"
