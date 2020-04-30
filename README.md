@@ -39,11 +39,11 @@ access http://localhost:8080/
 
 `npm run test:coverage`
 
-**Coverage Threshold > 60%**
+**Coverage Threshold > 70%**
 
-Currently tests ~= 72%.
+Coverage Tests = 82%.
 
-**The Unit tests was made focusing in API responses and changing state according expected behaviors**
+[Testing Behaviors and not implementation details](https://kentcdodds.com/blog/testing-implementation-details)
 
 ## Features
 
