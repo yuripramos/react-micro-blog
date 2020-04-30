@@ -3,7 +3,13 @@ import React from 'react';
 import Latest from '../Latest/index';
 
 type Props = {
-  data: []
+  data: {
+    title: string,
+    metadata: {
+      authorId: string,
+      publishedAt: string
+    }
+  }[]
 }
 
 const getKey = (post: any) => {

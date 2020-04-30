@@ -12,7 +12,7 @@ const getKey = (post: any) => {
 };
 
 type Props = {
-  data: []
+  data: any
 }
 
 export default ({ data }: Props) => {
