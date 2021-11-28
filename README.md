@@ -2,6 +2,8 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+![image](https://user-images.githubusercontent.com/7452143/124509296-1581bb80-dda8-11eb-89a1-62c35babe94a.png)
+
 ## :octopus: Getting Started
 
 This project was made focusing on the flat architecture for high scalable projects. The App itself is small but is 100% ready to get as big as possible
